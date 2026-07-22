@@ -1,0 +1,2169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Meridian Journal of Clinical and Applied Medicine — Open-access peer-reviewed multidisciplinary medical journal by Sunrise Research Works, Bhopal, India.">
+<title>Meridian Journal of Clinical and Applied Medicine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════
+   MERIDIAN JOURNAL OF CLINICAL AND APPLIED MEDICINE
+   Stylesheet — Sunrise Research Works © 2026
+   ═══════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ── RESET & BASE ── */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Inter',sans-serif; font-size:14px; line-height:1.65; color:#0D1B2A; background:#F4F6F8; }
+a { color:#1B4B7A; text-decoration:none; }
+a:hover { color:#C4873A; }
+img { max-width:100%; }
+ul { list-style:none; }
+
+/* ── VARIABLES ── */
+:root {
+  --navy:#1B4B7A;
+  --navy-dark:#122E4D;
+  --navy-mid:#2563A0;
+  --navy-pale:#EAF2FB;
+  --navy-light:#D3E6F7;
+  --gold:#C4873A;
+  --gold-light:#F0DFC4;
+  --gold-dark:#8A5A1E;
+  --ink:#0D1B2A;
+  --ink-mid:#2C3E50;
+  --ink-light:#5A6A7A;
+  --ink-faint:#8A9BAB;
+  --rule:#C8D5E0;
+  --bg:#F4F6F8;
+  --paper:#FFFFFF;
+  --green:#1A6B3C;
+  --green-light:#E5F4EC;
+}
+
+/* ── CONTAINER ── */
+.container { max-width:1100px; margin:0 auto; padding:0 24px; }
+
+/* ═══ TOPBAR ═══ */
+.topbar {
+  background:var(--navy-dark);
+  color:rgba(255,255,255,0.8);
+  font-size:11px;
+  letter-spacing:0.04em;
+  padding:6px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.topbar-right a { color:rgba(255,255,255,0.75); margin-left:16px; font-size:11px; }
+.topbar-right a:hover { color:#fff; }
+
+/* ═══ MASTHEAD ═══ */
+.masthead { background:var(--paper); border-bottom:3px solid var(--navy); padding:0 24px; }
+.masthead-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:18px 0 14px; gap:24px; }
+.journal-eyebrow { font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); font-weight:600; margin-bottom:5px; }
+.journal-title { font-family:'Playfair Display',serif; font-size:28px; font-weight:700; color:var(--navy); letter-spacing:-0.01em; line-height:1.15; }
+.journal-subtitle { font-family:'Source Serif 4',serif; font-size:12.5px; color:var(--ink-light); font-style:italic; margin-top:4px; }
+.masthead-meta { text-align:right; font-size:11.5px; color:var(--ink-light); line-height:1.9; }
+.meta-label { font-weight:600; color:var(--navy); }
+.issn-row { font-size:10px; color:var(--ink-faint); margin-top:5px; letter-spacing:0.04em; }
+
+/* ═══ NAV ═══ */
+.mainnav { background:var(--navy); }
+.nav-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center; padding:0 24px; }
+.nav-link { color:rgba(255,255,255,0.82); font-size:12px; font-weight:500; padding:11px 13px; display:block; letter-spacing:0.03em; border-bottom:2px solid transparent; transition:all 0.15s; }
+.nav-link:hover, .nav-link.active { color:#fff; background:rgba(255,255,255,0.08); border-bottom:2px solid var(--gold); }
+.nav-spacer { flex:1; }
+.nav-btn { background:var(--gold); color:#fff; border-radius:2px; padding:8px 16px; font-size:11.5px; font-weight:600; letter-spacing:0.04em; white-space:nowrap; }
+.nav-btn:hover { background:var(--gold-dark); color:#fff; }
+
+/* ═══ ANNOUNCE ═══ */
+.announce-band { background:var(--gold-light); border-top:2px solid var(--gold); border-bottom:2px solid var(--gold); padding:9px 24px; display:flex; align-items:center; gap:12px; }
+.announce-label { background:var(--gold); color:#fff; font-size:9px; font-weight:700; letter-spacing:0.1em; padding:3px 10px; border-radius:2px; text-transform:uppercase; flex-shrink:0; }
+.announce-text { font-size:12px; color:#5a3510; }
+.announce-text strong { color:#3a2208; }
+
+/* ═══ HERO ═══ */
+.hero { background:linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%); color:#fff; padding:36px 24px; }
+.hero-inner { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 330px; gap:44px; align-items:center; }
+.hero-eyebrow { font-size:10px; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold-light); font-weight:600; margin-bottom:12px; }
+.hero-headline { font-family:'Playfair Display',serif; font-size:24px; font-weight:700; line-height:1.35; margin-bottom:14px; }
+.hero-desc { font-size:13px; color:rgba(255,255,255,0.75); line-height:1.75; margin-bottom:22px; }
+.hero-stats { display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+.hstat { text-align:center; }
+.hstat strong { display:block; font-size:14px; font-weight:600; color:#fff; margin-bottom:1px; }
+.hstat span { font-size:10px; color:rgba(255,255,255,0.55); letter-spacing:0.03em; }
+.hstat-div { width:1px; height:32px; background:rgba(255,255,255,0.15); margin:0 8px; }
+.hero-cta-box { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.14); border-radius:4px; padding:22px; }
+.cta-box-title { font-family:'Playfair Display',serif; font-size:16px; font-weight:600; color:#fff; margin-bottom:6px; }
+.cta-box-sub { font-size:11.5px; color:rgba(255,255,255,0.6); margin-bottom:16px; line-height:1.6; }
+.cta-note { font-size:10px; color:rgba(255,255,255,0.4); text-align:center; margin-top:12px; line-height:1.6; }
+
+/* ═══ BUTTONS ═══ */
+.btn-primary { display:block; background:var(--gold); color:#fff; padding:10px 18px; border-radius:2px; font-size:12px; font-weight:700; letter-spacing:0.04em; text-align:center; transition:background 0.15s; }
+.btn-primary:hover { background:var(--gold-dark); color:#fff; }
+.btn-outline { display:block; background:transparent; color:rgba(255,255,255,0.82); border:1px solid rgba(255,255,255,0.28); padding:9px 18px; border-radius:2px; font-size:12px; font-weight:500; text-align:center; margin-top:8px; transition:all 0.15s; }
+.btn-outline:hover { background:rgba(255,255,255,0.08); color:#fff; }
+.btn-accent { display:block; background:var(--gold); color:#fff; padding:10px 18px; border-radius:2px; font-size:12px; font-weight:700; text-align:center; }
+.btn-accent:hover { background:var(--gold-dark); color:#fff; }
+.btn-navy { display:inline-block; background:var(--navy); color:#fff; padding:9px 20px; border-radius:2px; font-size:12px; font-weight:600; }
+.btn-navy:hover { background:var(--navy-dark); color:#fff; }
+.btn-block { display:block; width:100%; }
+.btn-block + .btn-block { margin-top:8px; }
+
+/* ═══ MAIN LAYOUT ═══ */
+.main-layout { display:grid; grid-template-columns:1fr 300px; gap:32px; padding-top:28px; padding-bottom:40px; }
+
+/* ═══ SECTION HEADING ═══ */
+.section-head { display:flex; align-items:center; gap:10px; margin-bottom:18px; padding-bottom:10px; border-bottom:2px solid var(--rule); }
+.section-head h2 { font-family:'Playfair Display',serif; font-size:18px; font-weight:700; color:var(--navy); }
+.sec-badge { font-size:9px; letter-spacing:0.1em; text-transform:uppercase; background:var(--navy-pale); color:var(--navy-mid); padding:3px 8px; border-radius:2px; font-weight:600; flex-shrink:0; }
+.view-all { margin-left:auto; font-size:11.5px; color:var(--navy-mid); font-weight:500; }
+.view-all:hover { text-decoration:underline; }
+
+/* ═══ ARTICLE CARDS ═══ */
+.art-card { display:flex; gap:0; padding:18px 0; border-bottom:1px solid var(--rule); }
+.art-card:last-of-type { border-bottom:none; }
+.art-num { font-family:'Playfair Display',serif; font-size:30px; font-weight:700; color:var(--rule); min-width:38px; line-height:1; padding-top:2px; }
+.art-body { flex:1; padding-left:14px; border-left:2px solid var(--rule); }
+.art-type { font-size:9px; letter-spacing:0.12em; text-transform:uppercase; font-weight:700; color:var(--gold); margin-bottom:4px; }
+.art-title { font-family:'Playfair Display',serif; font-size:14.5px; font-weight:600; color:var(--ink); line-height:1.4; margin-bottom:6px; cursor:pointer; }
+.art-title:hover { color:var(--navy); }
+.art-authors { font-size:11.5px; color:var(--ink-faint); font-style:italic; margin-bottom:6px; }
+.art-abstract { font-size:12px; color:var(--ink-mid); line-height:1.7; margin-bottom:8px; }
+.art-meta { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:10px; }
+.badge-spec { background:var(--navy-pale); color:var(--navy); padding:2px 8px; border-radius:2px; font-size:10px; font-weight:500; }
+.badge-oa { background:var(--green-light); color:var(--green); padding:2px 8px; border-radius:2px; font-size:10px; font-weight:600; }
+.art-doi { font-size:10px; color:var(--ink-faint); }
+.art-date { font-size:10px; color:var(--ink-faint); }
+.art-actions { display:flex; gap:6px; }
+.art-btn { font-size:11px; color:var(--navy-mid); border:1px solid var(--rule); padding:4px 12px; border-radius:2px; font-weight:500; transition:all 0.15s; }
+.art-btn:hover { background:var(--navy); color:#fff; border-color:var(--navy); }
+
+/* ═══ SPECIALTY GRID ═══ */
+.specialty-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+.spec-card { background:var(--paper); border:0.5px solid var(--rule); border-left:3px solid var(--navy); padding:10px 12px; border-radius:2px; display:flex; flex-direction:column; gap:2px; transition:border-color 0.15s,box-shadow 0.15s; }
+.spec-card:nth-child(even) { border-left-color:var(--gold); }
+.spec-card:hover { border-color:var(--navy); box-shadow:0 2px 8px rgba(27,75,122,0.1); }
+.spec-icon { font-style:normal; font-size:18px; }
+.spec-name { font-size:11.5px; font-weight:600; color:var(--navy); margin-top:2px; }
+.spec-sub { font-size:10px; color:var(--ink-faint); }
+
+/* ═══ SIDEBAR ═══ */
+.sidebar { display:flex; flex-direction:column; gap:18px; }
+.sidebar-card { background:var(--paper); border:0.5px solid var(--rule); border-radius:3px; padding:16px; }
+.sb-title { font-family:'Playfair Display',serif; font-size:14.5px; font-weight:700; color:var(--navy); border-bottom:1px solid var(--rule); padding-bottom:8px; margin-bottom:12px; }
+.sb-text { font-size:12px; color:var(--ink-mid); line-height:1.7; margin-bottom:10px; }
+.sb-note { font-size:10px; color:var(--ink-faint); margin-top:10px; line-height:1.6; }
+.scope-list li { font-size:12px; color:var(--ink-mid); padding:5px 0; border-bottom:1px solid #f4f4f4; display:flex; align-items:center; gap:8px; }
+.scope-list li:last-child { border-bottom:none; }
+.sdot { width:6px; height:6px; border-radius:50%; background:var(--gold); flex-shrink:0; }
+.metric-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:7px; }
+.metric-box { background:var(--navy-pale); border-radius:2px; padding:9px 6px; text-align:center; }
+.mv { font-family:'Playfair Display',serif; font-size:17px; font-weight:700; color:var(--navy); }
+.ml { font-size:9px; color:var(--ink-light); margin-top:2px; text-transform:uppercase; letter-spacing:0.04em; }
+.submit-dark { background:var(--navy); }
+.step-list li { font-size:12px; color:rgba(255,255,255,0.78); padding:5px 0; display:flex; gap:9px; align-items:flex-start; border-bottom:1px solid rgba(255,255,255,0.08); }
+.step-list li:last-child { border-bottom:none; }
+.step-n { background:var(--gold); color:#fff; width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:700; flex-shrink:0; margin-top:1px; }
+.idx-grid { display:flex; flex-wrap:wrap; gap:5px; }
+.idx-badge { background:#f0f4f8; border:1px solid var(--rule); border-radius:2px; padding:4px 9px; font-size:10px; font-weight:600; color:var(--navy); letter-spacing:0.04em; }
+.dates-table { width:100%; font-size:12px; border-collapse:collapse; }
+.dates-table tr { border-bottom:1px solid var(--rule); }
+.dates-table tr:last-child { border-bottom:none; }
+.dates-table td { padding:6px 0; color:var(--ink-mid); }
+.dates-table td:last-child { text-align:right; color:var(--navy); }
+.pub-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--navy); margin-bottom:3px; }
+.pub-addr { font-size:12px; color:var(--ink-light); margin-bottom:8px; }
+.pub-contact div { font-size:12px; color:var(--ink-mid); margin-bottom:4px; }
+.pub-contact a { color:var(--navy-mid); }
+
+/* ═══ PAGE HEADER (inner pages) ═══ */
+.page-header { background:var(--navy); color:#fff; padding:32px 24px; }
+.page-header .container { max-width:1100px; margin:0 auto; }
+.page-header h1 { font-family:'Playfair Display',serif; font-size:26px; font-weight:700; margin-bottom:6px; }
+.page-header p { font-size:13px; color:rgba(255,255,255,0.7); max-width:680px; line-height:1.7; }
+.breadcrumb { font-size:11px; color:rgba(255,255,255,0.5); margin-bottom:10px; }
+.breadcrumb a { color:rgba(255,255,255,0.5); }
+.breadcrumb span { color:rgba(255,255,255,0.8); }
+
+/* ═══ CONTENT PAGES ═══ */
+.page-layout { max-width:1100px; margin:0 auto; padding:32px 24px 48px; display:grid; grid-template-columns:1fr 300px; gap:32px; }
+.page-main { background:var(--paper); border:0.5px solid var(--rule); border-radius:3px; padding:28px 32px; }
+.page-main h2 { font-family:'Playfair Display',serif; font-size:20px; font-weight:700; color:var(--navy); margin-bottom:12px; padding-bottom:8px; border-bottom:1px solid var(--rule); }
+.page-main h3 { font-family:'Playfair Display',serif; font-size:16px; font-weight:600; color:var(--navy); margin:20px 0 8px; }
+.page-main p { font-size:13px; color:var(--ink-mid); line-height:1.8; margin-bottom:12px; }
+.page-main ul, .page-main ol { padding-left:18px; font-size:13px; color:var(--ink-mid); line-height:1.8; margin-bottom:12px; }
+.page-main ul { list-style:disc; }
+.page-main ol { list-style:decimal; }
+.page-main li { margin-bottom:6px; }
+.page-main table { width:100%; border-collapse:collapse; font-size:12.5px; margin-bottom:16px; }
+.page-main th { background:var(--navy-pale); color:var(--navy); padding:8px 12px; text-align:left; font-weight:600; border:1px solid var(--rule); }
+.page-main td { padding:8px 12px; border:1px solid var(--rule); color:var(--ink-mid); vertical-align:top; }
+.page-main tr:nth-child(even) td { background:#FAFBFD; }
+.infobox { background:var(--navy-pale); border-left:3px solid var(--navy); padding:12px 16px; border-radius:0 3px 3px 0; margin-bottom:16px; font-size:12.5px; color:var(--ink-mid); line-height:1.7; }
+.warnbox { background:#FFF8ED; border-left:3px solid var(--gold); padding:12px 16px; border-radius:0 3px 3px 0; margin-bottom:16px; font-size:12.5px; color:#5a3510; line-height:1.7; }
+
+/* ═══ EDITORIAL BOARD ═══ */
+.board-section-title { font-family:'Playfair Display',serif; font-size:17px; font-weight:700; color:var(--navy); margin:24px 0 14px; padding-bottom:8px; border-bottom:1px solid var(--rule); }
+.board-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-bottom:20px; }
+.board-card { background:var(--bg); border:0.5px solid var(--rule); border-radius:3px; padding:14px 16px; display:flex; gap:12px; align-items:flex-start; }
+.board-avatar { width:44px; height:44px; border-radius:50%; background:var(--navy-pale); display:flex; align-items:center; justify-content:center; font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--navy); flex-shrink:0; }
+.board-name { font-size:13px; font-weight:600; color:var(--ink); margin-bottom:2px; }
+.board-role { font-size:11px; font-weight:600; color:var(--gold); margin-bottom:2px; letter-spacing:0.03em; }
+.board-inst { font-size:11px; color:var(--ink-faint); line-height:1.5; }
+.board-spec { font-size:10px; color:var(--navy-mid); background:var(--navy-pale); padding:2px 7px; border-radius:2px; display:inline-block; margin-top:4px; }
+
+/* ═══ SPECIALTIES PAGE ═══ */
+.spec-full-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:28px; }
+.spec-full-card { background:var(--paper); border:0.5px solid var(--rule); border-left:3px solid var(--navy); border-radius:2px; padding:16px; }
+.spec-full-card:nth-child(even) { border-left-color:var(--gold); }
+.spec-full-icon { font-size:22px; margin-bottom:8px; display:block; }
+.spec-full-name { font-family:'Playfair Display',serif; font-size:14px; font-weight:700; color:var(--navy); margin-bottom:4px; }
+.spec-full-desc { font-size:11.5px; color:var(--ink-light); line-height:1.6; margin-bottom:8px; }
+.spec-keywords { display:flex; flex-wrap:wrap; gap:4px; }
+.spec-kw { font-size:10px; background:var(--navy-pale); color:var(--navy); padding:2px 7px; border-radius:2px; }
+
+/* ═══ SUBMIT FORM ═══ */
+.form-section { margin-bottom:24px; }
+.form-section-title { font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--navy); margin-bottom:12px; padding-bottom:6px; border-bottom:1px solid var(--rule); }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
+.form-row.full { grid-template-columns:1fr; }
+.form-group { display:flex; flex-direction:column; gap:4px; }
+.form-group label { font-size:11.5px; font-weight:600; color:var(--ink-mid); letter-spacing:0.02em; }
+.form-group input, .form-group select, .form-group textarea {
+  padding:9px 12px; border:1px solid var(--rule); border-radius:2px; font-size:13px; font-family:'Inter',sans-serif; color:var(--ink); background:var(--paper); outline:none; transition:border-color 0.15s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color:var(--navy); }
+.form-group textarea { resize:vertical; min-height:90px; }
+.form-note { font-size:11px; color:var(--ink-faint); margin-top:3px; }
+.req { color:var(--gold); margin-left:2px; }
+.checkbox-row { display:flex; gap:8px; align-items:flex-start; font-size:12px; color:var(--ink-mid); line-height:1.6; margin-bottom:10px; }
+.checkbox-row input[type=checkbox] { margin-top:2px; flex-shrink:0; }
+.submit-form-btn { background:var(--navy); color:#fff; border:none; padding:12px 32px; border-radius:2px; font-size:13px; font-weight:700; letter-spacing:0.04em; cursor:pointer; transition:background 0.15s; }
+.submit-form-btn:hover { background:var(--navy-dark); }
+
+/* ═══ CONTACT ═══ */
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:20px; }
+.contact-box { background:var(--bg); border:0.5px solid var(--rule); border-radius:3px; padding:16px; }
+.contact-box-title { font-size:12px; font-weight:600; color:var(--navy); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:10px; }
+.contact-item { display:flex; gap:10px; align-items:flex-start; margin-bottom:8px; font-size:12.5px; color:var(--ink-mid); line-height:1.6; }
+.contact-icon { font-size:16px; flex-shrink:0; margin-top:1px; }
+
+/* ═══ ARCHIVE ═══ */
+.vol-card { background:var(--paper); border:0.5px solid var(--rule); border-radius:3px; margin-bottom:14px; overflow:hidden; }
+.vol-header { background:var(--navy); color:#fff; padding:12px 18px; display:flex; justify-content:space-between; align-items:center; cursor:pointer; }
+.vol-title { font-family:'Playfair Display',serif; font-size:14.5px; font-weight:600; }
+.vol-meta { font-size:11px; color:rgba(255,255,255,0.6); }
+.vol-body { padding:16px 18px; }
+.issue-row { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid var(--rule); font-size:12.5px; }
+.issue-row:last-child { border-bottom:none; }
+.issue-name { color:var(--ink-mid); }
+.issue-link { color:var(--navy-mid); font-weight:500; font-size:11.5px; }
+
+/* ═══ ABOUT PAGE ═══ */
+.about-mission { background:var(--navy); color:#fff; padding:22px 24px; border-radius:3px; margin-bottom:20px; }
+.about-mission h3 { font-family:'Playfair Display',serif; font-size:16px; font-weight:600; margin-bottom:8px; }
+.about-mission p { font-size:13px; color:rgba(255,255,255,0.8); line-height:1.75; }
+.ethics-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.ethics-card { background:var(--bg); border:0.5px solid var(--rule); border-radius:3px; padding:14px; border-top:2px solid var(--navy); }
+.ethics-title { font-size:12px; font-weight:600; color:var(--navy); margin-bottom:6px; }
+.ethics-desc { font-size:11.5px; color:var(--ink-mid); line-height:1.65; }
+
+/* ═══ FOOTER ═══ */
+.footer { background:#0A1520; color:rgba(255,255,255,0.6); padding:36px 24px 18px; margin-top:0; }
+.footer-inner { max-width:1100px; margin:0 auto; }
+.footer-grid { display:grid; grid-template-columns:2.2fr 1fr 1fr 1fr; gap:32px; margin-bottom:28px; }
+.footer-brand { font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:#fff; margin-bottom:10px; }
+.footer-desc { font-size:11.5px; line-height:1.75; color:rgba(255,255,255,0.48); margin-bottom:10px; }
+.footer-issn { font-size:10.5px; color:rgba(255,255,255,0.3); letter-spacing:0.04em; }
+.footer-col h4 { font-size:10px; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.38); margin-bottom:12px; font-weight:600; }
+.footer-col a { display:block; color:rgba(255,255,255,0.58); font-size:12px; margin-bottom:6px; }
+.footer-col a:hover { color:#fff; }
+.footer-bottom { border-top:1px solid rgba(255,255,255,0.08); padding-top:14px; display:flex; justify-content:space-between; align-items:center; font-size:10.5px; color:rgba(255,255,255,0.3); flex-wrap:wrap; gap:8px; }
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width:900px) {
+  .hero-inner, .main-layout, .page-layout, .footer-grid { grid-template-columns:1fr; }
+  .specialty-grid, .spec-full-grid { grid-template-columns:repeat(2,1fr); }
+  .board-grid, .ethics-grid, .contact-grid { grid-template-columns:1fr; }
+  .form-row { grid-template-columns:1fr; }
+  .masthead-inner { flex-direction:column; gap:14px; text-align:center; }
+  .masthead-meta { text-align:center; }
+  .nav-inner { flex-wrap:wrap; }
+}
+@media (max-width:600px) {
+  .journal-title { font-size:22px; }
+  .specialty-grid { grid-template-columns:1fr 1fr; }
+  .spec-full-grid { grid-template-columns:1fr; }
+}
+
+/* SPA routing */
+.page { display: none; }
+.page.active { display: block; }
+</style>
+</head>
+<body>
+
+<!-- SHARED: TOPBAR -->
+<div class="topbar">
+  <div class="topbar-left">Volume 1 &nbsp;·&nbsp; Issue 1 &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; Open Access &nbsp;·&nbsp; Peer-Reviewed</div>
+  <div class="topbar-right">
+    <a onclick="nav('login')" style="cursor:pointer">Login</a>
+    <a onclick="nav('register')" style="cursor:pointer">Register</a>
+    <a onclick="nav('authors')" style="cursor:pointer">For Authors</a>
+    <a onclick="nav('contact')" style="cursor:pointer">Contact</a>
+  </div>
+</div>
+
+<!-- SHARED: MASTHEAD -->
+<header class="masthead">
+  <div class="container masthead-inner">
+    <div class="logo-block">
+      <div class="journal-eyebrow">Sunrise Research Works &nbsp;·&nbsp; Bhopal, India &nbsp;·&nbsp; Peer-Reviewed Open Access</div>
+      <div class="journal-title" style="cursor:pointer" onclick="nav('home')">Meridian Journal of Clinical<br>and Applied Medicine</div>
+      <div class="journal-subtitle">A multidisciplinary platform advancing evidence-based clinical practice across all medical specialties</div>
+    </div>
+    <div class="masthead-meta">
+      <div class="meta-row"><span class="meta-label">Publisher</span> Sunrise Research Works, Bhopal, MP, India</div>
+      <div class="meta-row"><span class="meta-label">Frequency</span> Quarterly &nbsp;|&nbsp; <span class="meta-label">Launched</span> 2026</div>
+      <div class="meta-row"><span class="meta-label">Format</span> Online · Open Access · No APC</div>
+      <div class="issn-row">ISSN (Online): 0000-0000 &nbsp;|&nbsp; ISSN (Print): 0000-0000</div>
+    </div>
+  </div>
+</header>
+
+<!-- SHARED: NAV -->
+<nav class="mainnav">
+  <div class="container nav-inner">
+    <a id="nav-home" class="nav-link active" onclick="nav('home')" style="cursor:pointer">Home</a>
+    <a id="nav-issue" class="nav-link" onclick="nav('issue')" style="cursor:pointer">Current Issue</a>
+    <a id="nav-archive" class="nav-link" onclick="nav('archive')" style="cursor:pointer">Archive</a>
+    <a id="nav-specialties" class="nav-link" onclick="nav('specialties')" style="cursor:pointer">Specialties</a>
+    <a id="nav-authors" class="nav-link" onclick="nav('authors')" style="cursor:pointer">For Authors</a>
+    <a id="nav-board" class="nav-link" onclick="nav('board')" style="cursor:pointer">Editorial Board</a>
+    <a id="nav-about" class="nav-link" onclick="nav('about')" style="cursor:pointer">About</a>
+    <a id="nav-contact" class="nav-link" onclick="nav('contact')" style="cursor:pointer">Contact</a>
+    <div class="nav-spacer"></div>
+    <a class="nav-btn" onclick="nav('submit')" style="cursor:pointer">Submit Manuscript ↗</a>
+  </div>
+</nav>
+
+<div id="page-home" class="page">
+<!-- MASTHEAD -->
+
+
+<!-- NAV -->
+
+
+<!-- ANNOUNCEMENT -->
+<div class="announce-band">
+  <span class="announce-label">Call for Papers</span>
+  <span class="announce-text"><strong>Inaugural Issue (Vol. 1, No. 1, 2026):</strong> Original research, systematic reviews, meta-analyses, and case reports across all medical specialties are invited. Submission deadline: <strong>September 30, 2026.</strong> No Article Processing Charge.</span>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Editor's Welcome &nbsp;·&nbsp; Inaugural Issue 2026</div>
+      <h1 class="hero-headline">Where clinical evidence meets applied practice — across every discipline of medicine</h1>
+      <p class="hero-desc">Meridian Journal of Clinical and Applied Medicine is an open-access, peer-reviewed journal covering all specialties of clinical and applied medicine. Published by Sunrise Research Works, we are committed to rigorous, ethical, and rapid dissemination of medical evidence to improve patient care globally.</p>
+      <div class="hero-stats">
+        <div class="hstat"><strong>All Specialties</strong><span>Multidisciplinary</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><strong>Double-Blind</strong><span>Peer Review</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><strong>Zero APC</strong><span>Free to Publish</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><strong>4–6 Weeks</strong><span>Review Time</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><strong>Quarterly</strong><span>Publication</span></div>
+      </div>
+    </div>
+    <div class="hero-cta-box">
+      <div class="cta-box-title">Publish Your Research</div>
+      <p class="cta-box-sub">Open for submissions across all medical and allied health specialties. No publication fee.</p>
+      <a onclick="nav('submit')" style="cursor:pointer" class="btn-primary btn-block">Submit a Manuscript ↗</a>
+      <a onclick="nav('authors')" style="cursor:pointer" class="btn-outline btn-block">Author Guidelines</a>
+      <a onclick="nav('register')" style="cursor:pointer" class="btn-outline btn-block">Register as Reviewer</a>
+      <div class="cta-note">No APC &nbsp;·&nbsp; Rapid Review &nbsp;·&nbsp; Open Access &nbsp;·&nbsp; DOI Assigned</div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="main-layout container">
+
+  <!-- LEFT: Articles + Specialties -->
+  <main class="main-content">
+
+    <!-- Latest Articles -->
+    <div class="section-head">
+      <h2>Latest Articles</h2>
+      <span class="sec-badge">Vol 1 · Issue 1 · 2026</span>
+      <a onclick="nav('issue')" style="cursor:pointer" class="view-all">View all →</a>
+    </div>
+
+    <article class="art-card">
+      <div class="art-num">01</div>
+      <div class="art-body">
+        <div class="art-type">Systematic Review &amp; Meta-Analysis</div>
+        <div class="art-title">Biochemical and nutritional parameters as predictors of weaning failure in mechanically ventilated patients: a systematic review and meta-analysis</div>
+        <div class="art-authors">Sharma N, Verma AK, Singh P, et al. &nbsp;·&nbsp; PROSPERO Registered (CRD Pending)</div>
+        <div class="art-abstract">Background: Weaning failure from mechanical ventilation remains a major challenge in intensive care. Nutritional and biochemical parameters may serve as objective predictors. Methods: A systematic search of PubMed, Scopus, and Cochrane was performed. Studies reporting biochemical or nutritional markers in relation to weaning outcomes were included. Results: Pooled analysis showed significant association of serum albumin, prealbumin, phosphate, magnesium, and NRS-2002 scores with weaning failure. Conclusions: Biochemical and nutritional screening should be integrated into pre-weaning assessment protocols.</div>
+        <div class="art-meta">
+          <span class="badge-spec">Critical Care</span>
+          <span class="badge-oa">Open Access</span>
+          <span class="art-doi">DOI: 10.12345/mjcam.2026.001</span>
+          <span class="art-date">Received: Jan 2026 · Accepted: Apr 2026 · Published: Jun 2026</span>
+        </div>
+        <div class="art-actions">
+          <a href="#" class="art-btn">Abstract</a>
+          <a href="#" class="art-btn">Full Text</a>
+          <a href="#" class="art-btn">PDF</a>
+          <a href="#" class="art-btn">Cite</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">02</div>
+      <div class="art-body">
+        <div class="art-type">Original Research</div>
+        <div class="art-title">Comparative analysis of homatropine versus tropicamide on anterior segment parameters in a tertiary ophthalmology centre: a prospective randomised study</div>
+        <div class="art-authors">Gupta R, Singh P, Agarwal M, et al. &nbsp;·&nbsp; Sharda University, Greater Noida</div>
+        <div class="art-abstract">Objective: To compare the effect of homatropine 2% and tropicamide 1% on anterior segment parameters including anterior chamber depth, angle, and pupil diameter using AS-OCT and slit-lamp biomicroscopy. Results: Both agents produced significant mydriasis; tropicamide offered faster onset while homatropine produced longer duration with greater cycloplegia. Conclusions: Choice of mydriatic should be individualized based on clinical requirement.</div>
+        <div class="art-meta">
+          <span class="badge-spec">Ophthalmology</span>
+          <span class="badge-oa">Open Access</span>
+          <span class="art-doi">DOI: 10.12345/mjcam.2026.002</span>
+          <span class="art-date">Received: Feb 2026 · Accepted: Apr 2026 · Published: Jun 2026</span>
+        </div>
+        <div class="art-actions">
+          <a href="#" class="art-btn">Abstract</a>
+          <a href="#" class="art-btn">Full Text</a>
+          <a href="#" class="art-btn">PDF</a>
+          <a href="#" class="art-btn">Cite</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">03</div>
+      <div class="art-body">
+        <div class="art-type">Narrative Review</div>
+        <div class="art-title">COPD phenotypes and comorbidity burden: implications for stratified clinical management in the Indian subcontinent</div>
+        <div class="art-authors">Verma AK, Mehta S, Chauhan R, et al. &nbsp;·&nbsp; MMIMSR Mullana, Haryana</div>
+        <div class="art-abstract">COPD is a heterogeneous disease with overlapping phenotypes including chronic bronchitis, emphysema, and asthma-COPD overlap (ACO). In the Indian context, biomass fuel exposure and indoor air pollution add distinct phenotypic dimensions. This review synthesises evidence on phenotype-specific management strategies, comorbidities including cardiovascular disease, anxiety, depression, and osteoporosis, and their impact on outcomes.</div>
+        <div class="art-meta">
+          <span class="badge-spec">Respiratory Medicine</span>
+          <span class="badge-oa">Open Access</span>
+          <span class="art-doi">DOI: 10.12345/mjcam.2026.003</span>
+          <span class="art-date">Received: Jan 2026 · Accepted: Mar 2026 · Published: Jun 2026</span>
+        </div>
+        <div class="art-actions">
+          <a href="#" class="art-btn">Abstract</a>
+          <a href="#" class="art-btn">Full Text</a>
+          <a href="#" class="art-btn">PDF</a>
+          <a href="#" class="art-btn">Cite</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">04</div>
+      <div class="art-body">
+        <div class="art-type">Case Report</div>
+        <div class="art-title">Mayer-Rokitansky-Küster-Hauser syndrome presenting as a rare triad with cervical vertebral anomaly and renal agenesis: a case report</div>
+        <div class="art-authors">Agarwal P, Yadav M, Sharma R, et al. &nbsp;·&nbsp; Sharda Hospital, Greater Noida</div>
+        <div class="art-abstract">We report a rare case of MRKH syndrome presenting as the complete triad of uterovaginal aplasia, unilateral renal agenesis, and cervical vertebral anomaly in a 19-year-old female presenting with primary amenorrhoea. The diagnostic workup, multidisciplinary management, and psychological support are discussed with review of literature.</div>
+        <div class="art-meta">
+          <span class="badge-spec">Gynaecology</span>
+          <span class="badge-oa">Open Access</span>
+          <span class="art-doi">DOI: 10.12345/mjcam.2026.004</span>
+          <span class="art-date">Received: Feb 2026 · Accepted: May 2026 · Published: Jun 2026</span>
+        </div>
+        <div class="art-actions">
+          <a href="#" class="art-btn">Abstract</a>
+          <a href="#" class="art-btn">Full Text</a>
+          <a href="#" class="art-btn">PDF</a>
+          <a href="#" class="art-btn">Cite</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">05</div>
+      <div class="art-body">
+        <div class="art-type">Original Research</div>
+        <div class="art-title">Morphometric analysis of lumbar vertebrae in cadaveric specimens: implications for spinal instrumentation in the North Indian population</div>
+        <div class="art-authors">Kumar S, Pandey R, Srivastava AK, et al. &nbsp;·&nbsp; B.R.D. Medical College, Gorakhpur</div>
+        <div class="art-abstract">Objective: To establish normative morphometric data for lumbar vertebrae in the North Indian population for safe pedicle screw placement. Methods: 60 cadaveric lumbar spines (L1–L5) were studied. Pedicle width, height, transverse angle, and laminar dimensions were measured using Vernier calipers. Results: Mean pedicle width was significantly smaller at L1-L2 compared to Western data, with implications for screw sizing in Indian patients.</div>
+        <div class="art-meta">
+          <span class="badge-spec">Anatomy &amp; Surgery</span>
+          <span class="badge-oa">Open Access</span>
+          <span class="art-doi">DOI: 10.12345/mjcam.2026.005</span>
+          <span class="art-date">Received: Mar 2026 · Accepted: May 2026 · Published: Jun 2026</span>
+        </div>
+        <div class="art-actions">
+          <a href="#" class="art-btn">Abstract</a>
+          <a href="#" class="art-btn">Full Text</a>
+          <a href="#" class="art-btn">PDF</a>
+          <a href="#" class="art-btn">Cite</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">06</div>
+      <div class="art-body">
+        <div class="art-type">Original Research</div>
+        <div class="art-title">Vocal cord palsy following thyroid surgery: incidence, risk factors, and functional recovery — a prospective observational study</div>
+        <div class="art-authors">Mishra V, Tiwari S, Rao GK, et al. &nbsp;·&nbsp; K.D. Medical College, Mathura</div>
+        <div class="art-abstract">Recurrent laryngeal nerve injury during thyroidectomy remains a significant surgical complication. This prospective study evaluated 148 patients undergoing thyroid surgery. Unilateral vocal cord palsy was documented by post-operative laryngoscopy. Intraoperative nerve monitoring correlated with outcomes. Recovery rates at 6 months and predictors of permanent palsy are reported.</div>
+        <div class="art-meta">
+          <span class="badge-spec">ENT / Head &amp; Neck Surgery</span>
+          <span class="badge-oa">Open Access</span>
+          <span class="art-doi">DOI: 10.12345/mjcam.2026.006</span>
+          <span class="art-date">Received: Feb 2026 · Accepted: Apr 2026 · Published: Jun 2026</span>
+        </div>
+        <div class="art-actions">
+          <a href="#" class="art-btn">Abstract</a>
+          <a href="#" class="art-btn">Full Text</a>
+          <a href="#" class="art-btn">PDF</a>
+          <a href="#" class="art-btn">Cite</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Browse by Specialty -->
+    <div class="section-head" style="margin-top:36px">
+      <h2>Browse by Specialty</h2>
+      <span class="sec-badge">All 18 Disciplines</span>
+      <a onclick="nav('specialties')" style="cursor:pointer" class="view-all">View all →</a>
+    </div>
+    <div class="specialty-grid">
+      <a href="specialties.html#critical-care" class="spec-card"><i class="spec-icon">🫁</i><span class="spec-name">Critical Care</span><span class="spec-sub">ICU · Ventilation · Sepsis</span></a>
+      <a href="specialties.html#respiratory" class="spec-card"><i class="spec-icon">🌬️</i><span class="spec-name">Respiratory Medicine</span><span class="spec-sub">COPD · TB · Asthma</span></a>
+      <a href="specialties.html#anatomy" class="spec-card"><i class="spec-icon">🦴</i><span class="spec-name">Anatomy</span><span class="spec-sub">Morphometry · Cadaveric</span></a>
+      <a href="specialties.html#ent" class="spec-card"><i class="spec-icon">👂</i><span class="spec-name">ENT / ORL</span><span class="spec-sub">Vocal Cord · Tympanoplasty</span></a>
+      <a href="specialties.html#ophthalmology" class="spec-card"><i class="spec-icon">👁️</i><span class="spec-name">Ophthalmology</span><span class="spec-sub">Anterior Segment · Retina</span></a>
+      <a href="specialties.html#gynaecology" class="spec-card"><i class="spec-icon">🩺</i><span class="spec-name">Gynaecology &amp; Obs</span><span class="spec-sub">Maternal · Case Reports</span></a>
+      <a href="specialties.html#paediatrics" class="spec-card"><i class="spec-icon">🧒</i><span class="spec-name">Paediatrics</span><span class="spec-sub">Neurology · Neonatology</span></a>
+      <a href="specialties.html#surgery" class="spec-card"><i class="spec-icon">🔬</i><span class="spec-name">Surgery</span><span class="spec-sub">General · Mastoid · Spine</span></a>
+      <a href="specialties.html#medicine" class="spec-card"><i class="spec-icon">💊</i><span class="spec-name">General Medicine</span><span class="spec-sub">Internal · Diabetes · HTN</span></a>
+      <a href="specialties.html#radiology" class="spec-card"><i class="spec-icon">🖥️</i><span class="spec-name">Radiology</span><span class="spec-sub">MRI · CT · Imaging</span></a>
+      <a href="specialties.html#pathology" class="spec-card"><i class="spec-icon">🧫</i><span class="spec-name">Pathology</span><span class="spec-sub">Histopathology · Cytology</span></a>
+      <a href="specialties.html#pharmacology" class="spec-card"><i class="spec-icon">🧪</i><span class="spec-name">Pharmacology</span><span class="spec-sub">Clinical Trials · Drug Studies</span></a>
+    </div>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <div class="sb-title">Aims &amp; Scope</div>
+      <p class="sb-text">Meridian JCAM publishes high-quality, peer-reviewed research across all disciplines of clinical and applied medicine — from basic science to clinical trials, case reports to systematic reviews.</p>
+      <ul class="scope-list">
+        <li><span class="sdot"></span>Original Research Articles</li>
+        <li><span class="sdot"></span>Systematic Reviews &amp; Meta-Analyses</li>
+        <li><span class="sdot"></span>Narrative / Scoping Reviews</li>
+        <li><span class="sdot"></span>Case Reports &amp; Case Series</li>
+        <li><span class="sdot"></span>Clinical Images &amp; Short Comm.</li>
+        <li><span class="sdot"></span>Letters to the Editor</li>
+        <li><span class="sdot"></span>Editorials &amp; Commentaries</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sb-title">Journal at a Glance</div>
+      <div class="metric-grid">
+        <div class="metric-box"><div class="mv">4–6</div><div class="ml">Wk Review</div></div>
+        <div class="metric-box"><div class="mv">Free</div><div class="ml">No APC</div></div>
+        <div class="metric-box"><div class="mv">2x</div><div class="ml">Blind Review</div></div>
+        <div class="metric-box"><div class="mv">OA</div><div class="ml">Open Access</div></div>
+        <div class="metric-box"><div class="mv">DOI</div><div class="ml">CrossRef</div></div>
+        <div class="metric-box"><div class="mv">CC</div><div class="ml">BY-NC 4.0</div></div>
+      </div>
+    </div>
+
+    <div class="sidebar-card submit-dark">
+      <div class="sb-title" style="color:#fff;border-color:rgba(255,255,255,0.15)">Submit Your Paper</div>
+      <ul class="step-list">
+        <li><span class="step-n">1</span>Prepare manuscript per author guidelines</li>
+        <li><span class="step-n">2</span>Register / login to submission portal</li>
+        <li><span class="step-n">3</span>Upload manuscript &amp; cover letter</li>
+        <li><span class="step-n">4</span>Complete copyright &amp; ethics declaration</li>
+        <li><span class="step-n">5</span>Await editorial acknowledgement (24 hrs)</li>
+      </ul>
+      <a onclick="nav('submit')" style="cursor:pointer" class="btn-accent btn-block" style="margin-top:14px">Submit Manuscript →</a>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sb-title">Targeting Indexing</div>
+      <div class="idx-grid">
+        <span class="idx-badge">PubMed / MEDLINE</span>
+        <span class="idx-badge">Scopus</span>
+        <span class="idx-badge">DOAJ</span>
+        <span class="idx-badge">Google Scholar</span>
+        <span class="idx-badge">Index Copernicus</span>
+        <span class="idx-badge">CrossRef DOI</span>
+        <span class="idx-badge">MedIND</span>
+        <span class="idx-badge">NLM Catalog</span>
+        <span class="idx-badge">EMBASE</span>
+        <span class="idx-badge">Web of Science</span>
+      </div>
+      <p class="sb-note">Committed to achieving international indexing within 2 years of launch.</p>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sb-title">Important Dates — Vol 1</div>
+      <table class="dates-table">
+        <tr><td>Submission Open</td><td><strong>June 1, 2026</strong></td></tr>
+        <tr><td>Submission Deadline</td><td><strong>Sep 30, 2026</strong></td></tr>
+        <tr><td>Review Completion</td><td><strong>Nov 15, 2026</strong></td></tr>
+        <tr><td>Publication</td><td><strong>Dec 2026</strong></td></tr>
+      </table>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sb-title">Published by</div>
+      <div class="pub-name">Sunrise Research Works</div>
+      <div class="pub-addr">Bhopal, Madhya Pradesh, India</div>
+      <div class="pub-contact">
+        <div>📧 <a href="mailto:editor@meridianjcam.com">editor@meridianjcam.com</a></div>
+        <div>📞 +91-94128-82757</div>
+        <div>📞 +91-80777-41454</div>
+        <div>🌐 <a onclick="nav('home')" style="cursor:pointer">www.meridianjcam.com</a></div>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+</div>
+
+<div id="page-issue" class="page">
+<div class="topbar-right"><a onclick="nav('login')" style="cursor:pointer">Login</a><a onclick="nav('register')" style="cursor:pointer">Register</a><a onclick="nav('authors')" style="cursor:pointer">For Authors</a><a onclick="nav('contact')" style="cursor:pointer">Contact</a></div>
+</div>
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a onclick="nav('home')" style="cursor:pointer">Home</a> / <span>Current Issue</span></div>
+    <h1>Current Issue — Volume 1, Issue 1</h1>
+    <p>June 2026 &nbsp;·&nbsp; Inaugural Issue &nbsp;·&nbsp; 12 Articles &nbsp;·&nbsp; Open Access</p>
+  </div>
+</div>
+
+<div class="page-layout">
+  <main class="page-main">
+
+    <div class="infobox"><strong>Inaugural Issue — June 2026:</strong> We are proud to present the first issue of Meridian JCAM, featuring original research, systematic reviews, and case reports from leading medical institutions across India.</div>
+
+    <h2>Editorial</h2>
+    <article class="art-card">
+      <div class="art-num">E1</div>
+      <div class="art-body">
+        <div class="art-type">Editorial</div>
+        <div class="art-title">Launching Meridian JCAM: a new open-access platform for Indian clinical medicine</div>
+        <div class="art-authors">Editor-in-Chief, Meridian JCAM &nbsp;·&nbsp; Sunrise Research Works, Bhopal</div>
+        <div class="art-abstract">The inaugural issue of Meridian Journal of Clinical and Applied Medicine marks a significant milestone for open-access medical publishing in India. With no article processing charges and a commitment to rigorous double-blind peer review, we aim to fill the gap for Indian clinician-researchers seeking a credible, accessible publication platform. This editorial outlines our vision, scope, and call to the medical community.</div>
+        <div class="art-meta"><span class="badge-spec">Editorial</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.E001</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a></div>
+      </div>
+    </article>
+
+    <h2 style="margin-top:24px">Original Research</h2>
+
+    <article class="art-card">
+      <div class="art-num">01</div>
+      <div class="art-body">
+        <div class="art-type">Systematic Review &amp; Meta-Analysis</div>
+        <div class="art-title">Biochemical and nutritional parameters as predictors of weaning failure in mechanically ventilated patients: a systematic review and meta-analysis</div>
+        <div class="art-authors">Sharma N, Verma AK, Singh P, et al. &nbsp;·&nbsp; MMIMSR Mullana, Haryana &nbsp;·&nbsp; PROSPERO Registered</div>
+        <div class="art-abstract">Background: Weaning failure from mechanical ventilation occurs in 20–30% of ICU patients and significantly increases morbidity, mortality, and cost. Nutritional deficiencies and biochemical derangements are increasingly recognised as modifiable predictors. This systematic review and meta-analysis synthesises evidence on the role of serum albumin, prealbumin, electrolytes (phosphate, magnesium, potassium), inflammatory markers, and nutritional risk scores (NRS-2002, NUTRIC score) as objective predictors of weaning outcomes. Methods: PubMed, Scopus, and Cochrane CENTRAL were searched from inception to December 2025. Results: 24 studies met inclusion criteria (n=6,847 patients). Hypoalbuminaemia (OR 2.84, 95%CI 1.94–4.16) and hypophosphataemia (OR 3.12, 95%CI 2.01–4.85) were the strongest predictors of weaning failure. Conclusions: Routine biochemical and nutritional assessment should be incorporated into pre-weaning protocols in ICU.</div>
+        <div class="art-meta"><span class="badge-spec">Critical Care</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.001</span><span class="art-date">Received Jan 2026 · Accepted Apr 2026 · Published Jun 2026</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Abstract</a><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a><a href="#" class="art-btn">Supplementary</a><a href="#" class="art-btn">Cite</a></div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">02</div>
+      <div class="art-body">
+        <div class="art-type">Original Research</div>
+        <div class="art-title">Comparative analysis of homatropine 2% versus tropicamide 1% on anterior segment parameters: a prospective randomised study</div>
+        <div class="art-authors">Gupta R, Singh P, Agarwal M, et al. &nbsp;·&nbsp; Sharda University, Greater Noida</div>
+        <div class="art-abstract">Purpose: To compare the effect of homatropine 2% and tropicamide 1% on pupil diameter, anterior chamber depth, anterior chamber angle, and intraocular pressure using anterior segment OCT and Goldmann applanation tonometry. Methods: 100 eyes of 50 patients were randomised to receive homatropine 2% or tropicamide 1%. Parameters were recorded at baseline, 30 min, and 60 min post-instillation. Results: Tropicamide produced faster onset of mydriasis (mean 22.3 min vs 34.6 min, p&lt;0.001). Homatropine produced greater cycloplegia at 60 minutes. Anterior chamber angle narrowing was clinically significant only in pre-existing shallow angles. IOP did not change significantly in either group in phakic eyes. Conclusions: Clinical selection of mydriatic agent should be based on purpose of use and individual anatomical risk factors.</div>
+        <div class="art-meta"><span class="badge-spec">Ophthalmology</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.002</span><span class="art-date">Received Feb 2026 · Accepted Apr 2026 · Published Jun 2026</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Abstract</a><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a><a href="#" class="art-btn">Cite</a></div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">03</div>
+      <div class="art-body">
+        <div class="art-type">Original Research</div>
+        <div class="art-title">Morphometric analysis of lumbar vertebrae in cadaveric specimens: implications for spinal instrumentation in the North Indian population</div>
+        <div class="art-authors">Kumar S, Pandey R, Srivastava AK, et al. &nbsp;·&nbsp; B.R.D. Medical College, Gorakhpur</div>
+        <div class="art-meta"><span class="badge-spec">Anatomy</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.003</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Abstract</a><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a><a href="#" class="art-btn">Cite</a></div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">04</div>
+      <div class="art-body">
+        <div class="art-type">Original Research</div>
+        <div class="art-title">Vocal cord palsy following thyroid surgery: incidence, risk factors, and functional recovery — a prospective observational study</div>
+        <div class="art-authors">Mishra V, Tiwari S, Rao GK, et al. &nbsp;·&nbsp; K.D. Medical College, Mathura</div>
+        <div class="art-meta"><span class="badge-spec">ENT / Head &amp; Neck</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.004</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Abstract</a><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a><a href="#" class="art-btn">Cite</a></div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">05</div>
+      <div class="art-body">
+        <div class="art-type">Original Research</div>
+        <div class="art-title">Bruckner test as a screening tool for amblyogenic factors in children aged 6 months to 6 years: a diagnostic validity study</div>
+        <div class="art-authors">Sharma P, Agarwal R, et al. &nbsp;·&nbsp; Sharda University, Greater Noida</div>
+        <div class="art-meta"><span class="badge-spec">Ophthalmology</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.005</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Abstract</a><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a><a href="#" class="art-btn">Cite</a></div>
+      </div>
+    </article>
+
+    <h2 style="margin-top:24px">Reviews</h2>
+
+    <article class="art-card">
+      <div class="art-num">06</div>
+      <div class="art-body">
+        <div class="art-type">Narrative Review</div>
+        <div class="art-title">COPD phenotypes and comorbidity burden: implications for stratified clinical management in the Indian subcontinent</div>
+        <div class="art-authors">Verma AK, Mehta S, et al. &nbsp;·&nbsp; MMIMSR Mullana, Haryana</div>
+        <div class="art-meta"><span class="badge-spec">Respiratory Medicine</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.006</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Abstract</a><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a><a href="#" class="art-btn">Cite</a></div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">07</div>
+      <div class="art-body">
+        <div class="art-type">Narrative Review</div>
+        <div class="art-title">Allergic rhinitis and obstructive sleep apnoea: exploring the nasobronchial link and management implications</div>
+        <div class="art-authors">Chauhan R, Mehta S, Singh V, et al. &nbsp;·&nbsp; MMIMSR Mullana, Haryana</div>
+        <div class="art-meta"><span class="badge-spec">Respiratory / ENT</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.007</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Abstract</a><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a><a href="#" class="art-btn">Cite</a></div>
+      </div>
+    </article>
+
+    <h2 style="margin-top:24px">Case Reports</h2>
+
+    <article class="art-card">
+      <div class="art-num">08</div>
+      <div class="art-body">
+        <div class="art-type">Case Report</div>
+        <div class="art-title">Mayer-Rokitansky-Küster-Hauser syndrome presenting as a rare triad with cervical vertebral anomaly and renal agenesis</div>
+        <div class="art-authors">Agarwal P, Yadav M, et al. &nbsp;·&nbsp; Sharda Hospital, Greater Noida</div>
+        <div class="art-meta"><span class="badge-spec">Gynaecology</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.008</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Abstract</a><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a><a href="#" class="art-btn">Cite</a></div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">09</div>
+      <div class="art-body">
+        <div class="art-type">Case Report</div>
+        <div class="art-title">Prolapsing cervical fibroid polyp presenting as complete procidentia: a diagnostic and management challenge</div>
+        <div class="art-authors">Tripathi N, Sharma V, et al. &nbsp;·&nbsp; SSIMS, Bhilai, Chhattisgarh</div>
+        <div class="art-meta"><span class="badge-spec">Gynaecology</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.009</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Abstract</a><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a><a href="#" class="art-btn">Cite</a></div>
+      </div>
+    </article>
+
+    <article class="art-card">
+      <div class="art-num">10</div>
+      <div class="art-body">
+        <div class="art-type">Case Report</div>
+        <div class="art-title">Neuroimaging patterns in childhood acute encephalitis syndrome: an MRI-based descriptive study at a tertiary paediatric centre</div>
+        <div class="art-authors">Singh R, Patel V, Desai M, et al. &nbsp;·&nbsp; S.S.G. Hospital, Baroda</div>
+        <div class="art-meta"><span class="badge-spec">Paediatric Neurology</span><span class="badge-oa">Open Access</span><span class="art-doi">DOI: 10.12345/mjcam.2026.010</span></div>
+        <div class="art-actions"><a href="#" class="art-btn">Abstract</a><a href="#" class="art-btn">Full Text</a><a href="#" class="art-btn">PDF</a><a href="#" class="art-btn">Cite</a></div>
+      </div>
+    </article>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sb-title">Issue Details</div>
+      <table class="dates-table">
+        <tr><td>Volume</td><td><strong>1</strong></td></tr>
+        <tr><td>Issue</td><td><strong>1 (Inaugural)</strong></td></tr>
+        <tr><td>Month</td><td><strong>June 2026</strong></td></tr>
+        <tr><td>Articles</td><td><strong>10 + 1 Editorial</strong></td></tr>
+        <tr><td>Pages</td><td><strong>1–148</strong></td></tr>
+        <tr><td>Access</td><td><strong>Open Access</strong></td></tr>
+      </table>
+    </div>
+    <div class="sidebar-card submit-dark">
+      <div class="sb-title" style="color:#fff;border-color:rgba(255,255,255,0.15)">Submit to Next Issue</div>
+      <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7;margin-bottom:14px">Vol. 1 Issue 2 (Sep 2026) is now open for submissions. No APC charged.</p>
+      <a onclick="nav('submit')" style="cursor:pointer" class="btn-accent btn-block">Submit Now →</a>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Browse by Type</div>
+      <ul class="scope-list">
+        <li><span class="sdot"></span>1 Editorial</li>
+        <li><span class="sdot"></span>5 Original Research Articles</li>
+        <li><span class="sdot"></span>2 Narrative Reviews</li>
+        <li><span class="sdot"></span>3 Case Reports</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+</div>
+
+<div id="page-archive" class="page">
+<div class="topbar-right"><a onclick="nav('login')" style="cursor:pointer">Login</a><a onclick="nav('register')" style="cursor:pointer">Register</a><a onclick="nav('authors')" style="cursor:pointer">For Authors</a><a onclick="nav('contact')" style="cursor:pointer">Contact</a></div>
+</div>
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a onclick="nav('home')" style="cursor:pointer">Home</a> / <span>Archive</span></div>
+    <h1>Journal Archive</h1>
+    <p>All published issues of Meridian JCAM are freely available online. No subscription required.</p>
+  </div>
+</div>
+<div class="page-layout">
+  <main class="page-main">
+    <div class="infobox">Meridian JCAM was launched in June 2026. All articles from Volume 1 onwards are freely available in full text and PDF. New issues are published quarterly: March, June, September, and December.</div>
+
+    <h2>Volume 1 (2026)</h2>
+
+    <div class="vol-card">
+      <div class="vol-header">
+        <div>
+          <div class="vol-title">Volume 1, Issue 1 — Inaugural Issue</div>
+          <div class="vol-meta">June 2026 &nbsp;·&nbsp; 11 Articles &nbsp;·&nbsp; Pages 1–148 &nbsp;·&nbsp; Open Access</div>
+        </div>
+        <span class="badge-oa" style="font-size:11px">Current</span>
+      </div>
+      <div class="vol-body">
+        <div class="issue-row"><span class="issue-name">Editorial: Launching Meridian JCAM</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div class="issue-row"><span class="issue-name">SR/MA: Biochemical predictors of weaning failure in mechanically ventilated patients</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div class="issue-row"><span class="issue-name">Original: Homatropine vs Tropicamide on anterior segment parameters</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div class="issue-row"><span class="issue-name">Original: Morphometric analysis of lumbar vertebrae in North Indian population</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div class="issue-row"><span class="issue-name">Original: Vocal cord palsy following thyroid surgery</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div class="issue-row"><span class="issue-name">Original: Bruckner test as screening tool for amblyogenic factors in children</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div class="issue-row"><span class="issue-name">Review: COPD phenotypes and comorbidity burden in Indian subcontinent</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div class="issue-row"><span class="issue-name">Review: Allergic rhinitis and obstructive sleep apnoea — the nasobronchial link</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div class="issue-row"><span class="issue-name">Case Report: MRKH syndrome presenting as rare triad</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div class="issue-row"><span class="issue-name">Case Report: Prolapsing cervical fibroid polyp presenting as procidentia</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div class="issue-row"><span class="issue-name">Case Report: Neuroimaging in childhood acute encephalitis syndrome — MRI patterns</span><a onclick="nav('issue')" style="cursor:pointer" class="issue-link">View →</a></div>
+        <div style="margin-top:12px;display:flex;gap:10px">
+          <a onclick="nav('issue')" style="cursor:pointer" class="btn-navy" style="font-size:11px;padding:7px 16px">View Full Issue →</a>
+          <a href="#" class="art-btn" style="padding:7px 16px;font-size:11px">Download Issue PDF</a>
+          <a href="#" class="art-btn" style="padding:7px 16px;font-size:11px">Table of Contents</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="vol-card" style="opacity:0.7">
+      <div class="vol-header" style="background:#4a6a8a">
+        <div>
+          <div class="vol-title">Volume 1, Issue 2 — Upcoming</div>
+          <div class="vol-meta">September 2026 &nbsp;·&nbsp; Submissions Open &nbsp;·&nbsp; Open Access</div>
+        </div>
+        <span style="background:#C4873A;color:#fff;font-size:10px;padding:3px 10px;border-radius:2px;font-weight:700">Accepting Papers</span>
+      </div>
+      <div class="vol-body">
+        <p style="font-size:12.5px;color:var(--ink-mid);padding:8px 0">Volume 1, Issue 2 will be published in September 2026. Submissions are currently open. Deadline: <strong>July 31, 2026</strong>.</p>
+        <a onclick="nav('submit')" style="cursor:pointer" class="btn-navy" style="font-size:11px;padding:7px 16px;display:inline-block">Submit to Issue 2 →</a>
+      </div>
+    </div>
+
+    <div class="vol-card" style="opacity:0.5">
+      <div class="vol-header" style="background:#6a7a8a">
+        <div>
+          <div class="vol-title">Volume 1, Issue 3 — Planned</div>
+          <div class="vol-meta">December 2026 &nbsp;·&nbsp; Submissions open from August 2026</div>
+        </div>
+      </div>
+      <div class="vol-body">
+        <p style="font-size:12.5px;color:var(--ink-mid);padding:8px 0">The December 2026 issue will open for submissions in August 2026. Watch this space.</p>
+      </div>
+    </div>
+
+    <div class="warnbox" style="margin-top:24px">
+      <strong>Ahead of Print:</strong> Accepted manuscripts are published online with a DOI before formal issue assignment. Check the <a onclick="nav('issue')" style="cursor:pointer">Current Issue</a> page for the latest Ahead of Print articles.
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sb-title">Archive Summary</div>
+      <table class="dates-table">
+        <tr><td>Total Volumes</td><td><strong>1</strong></td></tr>
+        <tr><td>Total Issues</td><td><strong>1 (Published)</strong></td></tr>
+        <tr><td>Total Articles</td><td><strong>11</strong></td></tr>
+        <tr><td>Open Access</td><td><strong>100%</strong></td></tr>
+        <tr><td>DOI Assigned</td><td><strong>All Articles</strong></td></tr>
+      </table>
+    </div>
+    <div class="sidebar-card submit-dark">
+      <div class="sb-title" style="color:#fff;border-color:rgba(255,255,255,0.15)">Publish in Vol 1 Issue 2</div>
+      <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7;margin-bottom:14px">Deadline: July 31, 2026. No APC. Double-blind review.</p>
+      <a onclick="nav('submit')" style="cursor:pointer" class="btn-accent btn-block">Submit Now →</a>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Publication Schedule</div>
+      <table class="dates-table">
+        <tr><td>Issue 1</td><td><strong>June 2026</strong></td></tr>
+        <tr><td>Issue 2</td><td><strong>September 2026</strong></td></tr>
+        <tr><td>Issue 3</td><td><strong>December 2026</strong></td></tr>
+        <tr><td>Issue 4</td><td><strong>March 2027</strong></td></tr>
+      </table>
+    </div>
+  </aside>
+</div>
+</div>
+
+<div id="page-specialties" class="page">
+<div class="topbar-right"><a onclick="nav('login')" style="cursor:pointer">Login</a><a onclick="nav('register')" style="cursor:pointer">Register</a><a onclick="nav('authors')" style="cursor:pointer">For Authors</a><a onclick="nav('contact')" style="cursor:pointer">Contact</a></div>
+</div>
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a onclick="nav('home')" style="cursor:pointer">Home</a> / <span>Specialties</span></div>
+    <h1>Browse by Specialty</h1>
+    <p>Meridian JCAM covers all disciplines of clinical and applied medicine. Select a specialty to view published articles and submission guidelines for that field.</p>
+  </div>
+</div>
+<div style="max-width:1100px;margin:0 auto;padding:32px 24px 48px">
+  <div class="spec-full-grid">
+    <div class="spec-full-card" id="critical-care">
+      <span class="spec-full-icon">🫁</span>
+      <div class="spec-full-name">Critical Care &amp; ICU Medicine</div>
+      <div class="spec-full-desc">Mechanical ventilation, sepsis, haemodynamic monitoring, ARDS, weaning protocols, nutrition in ICU, organ support, and end-of-life care in the intensive care unit.</div>
+      <div class="spec-keywords"><span class="spec-kw">Mechanical Ventilation</span><span class="spec-kw">Sepsis</span><span class="spec-kw">ARDS</span><span class="spec-kw">Weaning</span><span class="spec-kw">ICU Nutrition</span></div>
+    </div>
+    <div class="spec-full-card" id="respiratory">
+      <span class="spec-full-icon">🌬️</span>
+      <div class="spec-full-name">Respiratory Medicine &amp; Pulmonology</div>
+      <div class="spec-full-desc">COPD, asthma, tuberculosis, interstitial lung disease, allergic rhinitis, sleep-disordered breathing, pulmonary hypertension, and lung cancer.</div>
+      <div class="spec-keywords"><span class="spec-kw">COPD</span><span class="spec-kw">Asthma</span><span class="spec-kw">Tuberculosis</span><span class="spec-kw">ILD</span><span class="spec-kw">OSA</span></div>
+    </div>
+    <div class="spec-full-card" id="medicine">
+      <span class="spec-full-icon">💊</span>
+      <div class="spec-full-name">General Medicine &amp; Internal Medicine</div>
+      <div class="spec-full-desc">Diabetes mellitus, hypertension, chronic kidney disease, thyroid disorders, rheumatological conditions, infectious diseases, and general clinical medicine.</div>
+      <div class="spec-keywords"><span class="spec-kw">Diabetes</span><span class="spec-kw">Hypertension</span><span class="spec-kw">Thyroid</span><span class="spec-kw">CKD</span><span class="spec-kw">Infection</span></div>
+    </div>
+    <div class="spec-full-card" id="surgery">
+      <span class="spec-full-icon">🔬</span>
+      <div class="spec-full-name">Surgery</div>
+      <div class="spec-full-desc">General surgery, laparoscopic surgery, orthopaedic surgery, neurosurgery, plastic and reconstructive surgery, cardiothoracic surgery, and vascular surgery.</div>
+      <div class="spec-keywords"><span class="spec-kw">General Surgery</span><span class="spec-kw">Laparoscopy</span><span class="spec-kw">Orthopaedics</span><span class="spec-kw">Neurosurgery</span></div>
+    </div>
+    <div class="spec-full-card" id="ophthalmology">
+      <span class="spec-full-icon">👁️</span>
+      <div class="spec-full-name">Ophthalmology &amp; Visual Sciences</div>
+      <div class="spec-full-desc">Anterior segment disorders, glaucoma, retinal diseases, paediatric ophthalmology, squint and amblyopia, oculoplastics, cornea and external eye diseases, cataract, and refractive surgery.</div>
+      <div class="spec-keywords"><span class="spec-kw">Glaucoma</span><span class="spec-kw">Cataract</span><span class="spec-kw">Retina</span><span class="spec-kw">Amblyopia</span><span class="spec-kw">Cornea</span></div>
+    </div>
+    <div class="spec-full-card" id="ent">
+      <span class="spec-full-icon">👂</span>
+      <div class="spec-full-name">ENT, Head &amp; Neck Surgery</div>
+      <div class="spec-full-desc">Tympanoplasty, mastoid surgery, sinusitis, vocal cord pathology, laryngeal disorders, thyroid surgery complications, paediatric ENT, and cochlear implants.</div>
+      <div class="spec-keywords"><span class="spec-kw">Tympanoplasty</span><span class="spec-kw">Vocal Cord Palsy</span><span class="spec-kw">Mastoid</span><span class="spec-kw">Sinusitis</span></div>
+    </div>
+    <div class="spec-full-card" id="gynaecology">
+      <span class="spec-full-icon">🩺</span>
+      <div class="spec-full-name">Obstetrics &amp; Gynaecology</div>
+      <div class="spec-full-desc">Maternal medicine, high-risk obstetrics, gynaecological oncology, reproductive endocrinology, infertility, congenital anomalies, and minimally invasive gynaecological surgery.</div>
+      <div class="spec-keywords"><span class="spec-kw">Obstetrics</span><span class="spec-kw">Gynaecological Oncology</span><span class="spec-kw">Infertility</span><span class="spec-kw">MRKH</span></div>
+    </div>
+    <div class="spec-full-card" id="paediatrics">
+      <span class="spec-full-icon">🧒</span>
+      <div class="spec-full-name">Paediatrics &amp; Neonatology</div>
+      <div class="spec-full-desc">Paediatric neurology, neonatology, paediatric infectious diseases, growth and development, childhood epilepsy, neuroimaging in children, and paediatric intensive care.</div>
+      <div class="spec-keywords"><span class="spec-kw">Epilepsy</span><span class="spec-kw">Neonatology</span><span class="spec-kw">Paediatric Neurology</span><span class="spec-kw">AES</span></div>
+    </div>
+    <div class="spec-full-card" id="radiology">
+      <span class="spec-full-icon">🖥️</span>
+      <div class="spec-full-name">Radiology &amp; Imaging</div>
+      <div class="spec-full-desc">MRI, CT, ultrasound, X-ray, interventional radiology, nuclear medicine, neuroradiology, musculoskeletal imaging, and breast imaging.</div>
+      <div class="spec-keywords"><span class="spec-kw">MRI</span><span class="spec-kw">CT Scan</span><span class="spec-kw">Ultrasound</span><span class="spec-kw">Neuroimaging</span><span class="spec-kw">MRA/MRV</span></div>
+    </div>
+    <div class="spec-full-card" id="pathology">
+      <span class="spec-full-icon">🧫</span>
+      <div class="spec-full-name">Pathology, Haematology &amp; Microbiology</div>
+      <div class="spec-full-desc">Histopathology, cytology, haematological disorders, clinical microbiology, immunology, autopsy findings, tumour pathology, and laboratory medicine.</div>
+      <div class="spec-keywords"><span class="spec-kw">Histopathology</span><span class="spec-kw">Cytology</span><span class="spec-kw">Haematology</span><span class="spec-kw">O-RADS</span></div>
+    </div>
+    <div class="spec-full-card" id="anatomy">
+      <span class="spec-full-icon">🦴</span>
+      <div class="spec-full-name">Anatomy &amp; Clinical Morphometry</div>
+      <div class="spec-full-desc">Cadaveric studies, morphometric analysis, variations in human anatomy, clinical anatomy relevant to surgery, embryology, and histology.</div>
+      <div class="spec-keywords"><span class="spec-kw">Morphometry</span><span class="spec-kw">Cadaveric</span><span class="spec-kw">Vertebral</span><span class="spec-kw">Placenta</span></div>
+    </div>
+    <div class="spec-full-card" id="pharmacology">
+      <span class="spec-full-icon">🧪</span>
+      <div class="spec-full-name">Pharmacology &amp; Therapeutics</div>
+      <div class="spec-full-desc">Clinical pharmacology, drug interactions, adverse drug reactions, rational drug use, analgesic studies, antibiotic resistance, and pharmacovigilance.</div>
+      <div class="spec-keywords"><span class="spec-kw">Clinical Pharmacology</span><span class="spec-kw">ADR</span><span class="spec-kw">Analgesics</span><span class="spec-kw">Antibiotic Resistance</span></div>
+    </div>
+    <div class="spec-full-card" id="psychiatry">
+      <span class="spec-full-icon">🧠</span>
+      <div class="spec-full-name">Psychiatry &amp; Mental Health</div>
+      <div class="spec-full-desc">Depression, anxiety disorders, schizophrenia, substance use disorders, liaison psychiatry, psychopharmacology, and mental health in medical students and residents.</div>
+      <div class="spec-keywords"><span class="spec-kw">Depression</span><span class="spec-kw">Schizophrenia</span><span class="spec-kw">Anxiety</span><span class="spec-kw">Psychosis</span></div>
+    </div>
+    <div class="spec-full-card" id="community">
+      <span class="spec-full-icon">🏥</span>
+      <div class="spec-full-name">Community Medicine &amp; Epidemiology</div>
+      <div class="spec-full-desc">Epidemiological studies, public health interventions, health policy research, biostatistical methods, vaccination programmes, and social determinants of health.</div>
+      <div class="spec-keywords"><span class="spec-kw">Epidemiology</span><span class="spec-kw">Vaccination</span><span class="spec-kw">Biostatistics</span><span class="spec-kw">Public Health</span></div>
+    </div>
+    <div class="spec-full-card" id="dermatology">
+      <span class="spec-full-icon">🩹</span>
+      <div class="spec-full-name">Dermatology &amp; Venereology</div>
+      <div class="spec-full-desc">Psoriasis, atopic dermatitis, fungal infections, sexually transmitted infections, dermatoscopy, skin malignancies, and cosmetic dermatology.</div>
+      <div class="spec-keywords"><span class="spec-kw">Psoriasis</span><span class="spec-kw">Atopic Dermatitis</span><span class="spec-kw">STI</span><span class="spec-kw">Dermatoscopy</span></div>
+    </div>
+    <div class="spec-full-card" id="dentistry">
+      <span class="spec-full-icon">🦷</span>
+      <div class="spec-full-name">Dentistry &amp; Oral Medicine</div>
+      <div class="spec-full-desc">Oral cancer, periodontal diseases, dental implants, orthodontics, oral mucosal conditions, maxillofacial surgery, and paediatric dentistry.</div>
+      <div class="spec-keywords"><span class="spec-kw">Oral Cancer</span><span class="spec-kw">Periodontics</span><span class="spec-kw">Implants</span><span class="spec-kw">Orthodontics</span></div>
+    </div>
+    <div class="spec-full-card" id="nursing">
+      <span class="spec-full-icon">💉</span>
+      <div class="spec-full-name">Nursing &amp; Allied Health Sciences</div>
+      <div class="spec-full-desc">Nursing practice, physiotherapy, occupational therapy, clinical nutrition, speech therapy, medical education, and healthcare management.</div>
+      <div class="spec-keywords"><span class="spec-kw">Nursing Practice</span><span class="spec-kw">Physiotherapy</span><span class="spec-kw">Nutrition</span><span class="spec-kw">Medical Education</span></div>
+    </div>
+    <div class="spec-full-card" id="cardiology">
+      <span class="spec-full-icon">❤️</span>
+      <div class="spec-full-name">Cardiology &amp; Cardiac Surgery</div>
+      <div class="spec-full-desc">Ischaemic heart disease, heart failure, arrhythmias, valvular heart disease, cardiac imaging, interventional cardiology, and cardiac rehabilitation.</div>
+      <div class="spec-keywords"><span class="spec-kw">IHD</span><span class="spec-kw">Heart Failure</span><span class="spec-kw">Arrhythmia</span><span class="spec-kw">Echocardiography</span></div>
+    </div>
+  </div>
+  <div class="warnbox">Not finding your specialty? Meridian JCAM accepts manuscripts from all areas of clinical medicine and allied health sciences. <a onclick="nav('contact')" style="cursor:pointer">Contact us</a> with your query, or submit directly — our editorial team will guide you.</div>
+</div>
+</div>
+
+<div id="page-authors" class="page">
+<div class="topbar-right"><a onclick="nav('login')" style="cursor:pointer">Login</a><a onclick="nav('register')" style="cursor:pointer">Register</a><a onclick="nav('authors')" style="cursor:pointer">For Authors</a><a onclick="nav('contact')" style="cursor:pointer">Contact</a></div>
+</div>
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a onclick="nav('home')" style="cursor:pointer">Home</a> / <span>For Authors</span></div>
+    <h1>Author Guidelines</h1>
+    <p>Complete instructions for preparing and submitting your manuscript to Meridian JCAM. Please read carefully before submission.</p>
+  </div>
+</div>
+
+<div class="page-layout">
+  <main class="page-main">
+
+    <div class="infobox"><strong>No Article Processing Charge (APC):</strong> Meridian JCAM does not charge authors any submission, review, or publication fee. All articles are freely available online. Open Access is funded by Sunrise Research Works.</div>
+
+    <h2 id="types">Article Types &amp; Word Limits</h2>
+    <table>
+      <thead><tr><th>Article Type</th><th>Word Limit (excl. references)</th><th>Abstract</th><th>References</th><th>Tables/Figures</th></tr></thead>
+      <tbody>
+        <tr><td>Original Research</td><td>3,000–4,000 words</td><td>250 words (structured)</td><td>Up to 40</td><td>Up to 6</td></tr>
+        <tr><td>Systematic Review &amp; Meta-Analysis</td><td>4,000–6,000 words</td><td>300 words (structured)</td><td>Up to 80</td><td>Up to 10</td></tr>
+        <tr><td>Narrative / Scoping Review</td><td>3,000–5,000 words</td><td>200 words (unstructured)</td><td>Up to 60</td><td>Up to 8</td></tr>
+        <tr><td>Case Report</td><td>1,500–2,500 words</td><td>150 words (unstructured)</td><td>Up to 20</td><td>Up to 5</td></tr>
+        <tr><td>Case Series</td><td>2,000–3,000 words</td><td>200 words (structured)</td><td>Up to 30</td><td>Up to 6</td></tr>
+        <tr><td>Clinical Image</td><td>300–500 words</td><td>Not required</td><td>Up to 5</td><td>2–4 images</td></tr>
+        <tr><td>Short Communication</td><td>800–1,200 words</td><td>100 words</td><td>Up to 10</td><td>Up to 2</td></tr>
+        <tr><td>Letter to the Editor</td><td>400–600 words</td><td>Not required</td><td>Up to 5</td><td>Up to 1</td></tr>
+        <tr><td>Editorial / Commentary</td><td>800–1,500 words</td><td>Not required</td><td>Up to 15</td><td>Up to 2</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="format">Manuscript Formatting</h2>
+    <h3>General</h3>
+    <ul>
+      <li>Language: English (British or American, consistently used)</li>
+      <li>Font: Times New Roman, 12pt, double-spaced throughout</li>
+      <li>Margins: 1 inch (2.54 cm) on all sides</li>
+      <li>Page numbers: Bottom right on all pages</li>
+      <li>Line numbers: Continuous line numbers must be added</li>
+      <li>File format: Microsoft Word (.doc or .docx); PDF for figures</li>
+    </ul>
+
+    <h3>Structure of Original Research Papers</h3>
+    <ol>
+      <li><strong>Title Page</strong> — Title, authors with degrees &amp; affiliations, corresponding author, conflict of interest, funding, ethics approval number, CTRI/trial registration</li>
+      <li><strong>Abstract</strong> — Structured: Background, Aims/Objectives, Methods, Results, Conclusions, Keywords (5–8, MeSH terms preferred)</li>
+      <li><strong>Introduction</strong> — Background, rationale, hypothesis, objectives</li>
+      <li><strong>Materials &amp; Methods</strong> — Study design, setting, period, participants (inclusion/exclusion), sample size calculation, intervention, outcome measures, statistical methods, ethical approval</li>
+      <li><strong>Results</strong> — Present data with tables and figures; avoid duplicating data in text</li>
+      <li><strong>Discussion</strong> — Interpret findings, compare with literature, limitations, future directions</li>
+      <li><strong>Conclusions</strong> — Brief, based only on the data presented</li>
+      <li><strong>Acknowledgements</strong> — List funding agencies, technical support, statisticians</li>
+      <li><strong>Conflict of Interest Statement</strong></li>
+      <li><strong>References</strong></li>
+      <li><strong>Tables</strong> — Each on a separate page with title above and footnotes below</li>
+      <li><strong>Figures/Images</strong> — High resolution (≥300 DPI for photographs, ≥600 DPI for line art); submitted separately as TIFF/JPEG</li>
+    </ol>
+
+    <h2 id="references">Reference Style</h2>
+    <p>Meridian JCAM follows the <strong>Vancouver referencing style</strong> (ICMJE format). References are numbered consecutively in the order they appear in the text, cited in superscript numerals.</p>
+    <div class="infobox">
+      <strong>Journal Article:</strong> Smith A, Jones B, Patel R. Title of the article. Journal Name Abbrev. Year;Volume(Issue):Page–Page.<br><br>
+      <strong>Book:</strong> Last FM, editor. Title of book. Edition. Place: Publisher; Year.<br><br>
+      <strong>Online Source:</strong> Author AA. Title of article [Internet]. Year [cited Year Month Day]. Available from: URL
+    </div>
+    <p>Authors are responsible for verifying all references against PubMed or the original source before submission. Unverified or fabricated references will lead to immediate rejection.</p>
+
+    <h2 id="tables">Tables &amp; Figures</h2>
+    <ul>
+      <li>Tables must be created in MS Word (not pasted as images)</li>
+      <li>Table titles appear above the table; footnotes below (using superscript letters: a, b, c)</li>
+      <li>Figures: high-resolution JPEG/TIFF (≥300 DPI); each submitted as a separate file</li>
+      <li>Figure legends are listed on a separate page at the end of the manuscript</li>
+      <li>All abbreviations in tables/figures must be defined in footnotes</li>
+      <li>Photomicrographs must include scale bars and stain name</li>
+      <li>Patient-identifiable information must be removed from clinical images; written consent required</li>
+    </ul>
+
+    <h2 id="checklist">Pre-Submission Checklist</h2>
+    <ul>
+      <li>☐ Title page is separate from the main manuscript (blinded review)</li>
+      <li>☐ Structured abstract with keywords included</li>
+      <li>☐ Line numbers added (continuous)</li>
+      <li>☐ Double-spacing, Times New Roman 12pt</li>
+      <li>☐ Vancouver references verified against PubMed</li>
+      <li>☐ Ethics approval number stated in Methods section</li>
+      <li>☐ CTRI/trial registration number stated (for clinical trials)</li>
+      <li>☐ PRISMA checklist attached (for systematic reviews/meta-analyses)</li>
+      <li>☐ PROSPERO registration mentioned (for SR/MA)</li>
+      <li>☐ CONSORT checklist attached (for RCTs)</li>
+      <li>☐ CARE checklist attached (for case reports)</li>
+      <li>☐ Conflict of interest statement completed</li>
+      <li>☐ Author contribution statement included</li>
+      <li>☐ Patient consent obtained and documented (case reports)</li>
+      <li>☐ Figures submitted at ≥300 DPI as separate JPEG/TIFF files</li>
+      <li>☐ Plagiarism below 15% (self-checked via iThenticate/Turnitin)</li>
+      <li>☐ Cover letter uploaded</li>
+    </ul>
+
+    <h2 id="review">Peer Review Process</h2>
+    <p>Meridian JCAM uses a <strong>double-blind peer review</strong> system. Manuscripts are first screened by the Editor-in-Chief for scope and quality. Manuscripts passing initial screening are sent to two or more independent reviewers.</p>
+    <h3>Possible Decisions</h3>
+    <ul>
+      <li><strong>Accept as is</strong> — Rare for first submission; paper is accepted without changes</li>
+      <li><strong>Minor revision</strong> — Small changes required; authors given 2 weeks</li>
+      <li><strong>Major revision</strong> — Substantial changes required; authors given 4 weeks; re-review possible</li>
+      <li><strong>Reject with resubmission invited</strong> — Fundamental issues but concept is sound</li>
+      <li><strong>Reject outright</strong> — Does not meet scope or quality threshold</li>
+    </ul>
+
+    <h2 id="ethics">Ethical Requirements</h2>
+    <ul>
+      <li>IEC/IRB approval number must be stated for all clinical studies</li>
+      <li>Clinical trials must be registered in CTRI (India) or ClinicalTrials.gov</li>
+      <li>Written informed consent required for all case reports and studies involving identifiable patients</li>
+      <li>All animal experiments must follow CPCSEA / IAEC guidelines</li>
+      <li>Authors must follow ICMJE authorship criteria strictly</li>
+    </ul>
+
+    <h2 id="copyright">Copyright &amp; Licensing</h2>
+    <p>Upon acceptance, authors grant Meridian JCAM a non-exclusive licence to publish the article in open access format. Authors retain copyright under a <strong>Creative Commons Attribution Non-Commercial 4.0 (CC BY-NC 4.0)</strong> licence. The article may be freely shared and adapted for non-commercial purposes with attribution to the original publication.</p>
+
+    <h2 id="tracking">Track Your Submission</h2>
+    <p>Authors can track the status of their manuscript by logging into the submission portal at <a onclick="nav('login')" style="cursor:pointer">www.meridianjcam.com/login</a>. Status updates are also sent automatically by email at each stage of the editorial process.</p>
+    <table>
+      <thead><tr><th>Status</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td>Submitted</td><td>Manuscript received; awaiting editorial screening</td></tr>
+        <tr><td>Under Editorial Review</td><td>Being reviewed by Editor-in-Chief for scope &amp; quality</td></tr>
+        <tr><td>Under Peer Review</td><td>Sent to external reviewers</td></tr>
+        <tr><td>Revision Required</td><td>Author action needed; log in to view comments</td></tr>
+        <tr><td>Revision Under Review</td><td>Revised manuscript under re-evaluation</td></tr>
+        <tr><td>Accepted</td><td>Manuscript accepted; production in progress</td></tr>
+        <tr><td>Published</td><td>Article live with DOI assigned</td></tr>
+        <tr><td>Rejected</td><td>Not accepted; reason provided in decision letter</td></tr>
+      </tbody>
+    </table>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card submit-dark">
+      <div class="sb-title" style="color:#fff;border-color:rgba(255,255,255,0.15)">Ready to Submit?</div>
+      <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7;margin-bottom:14px">Read the guidelines, complete the checklist, and submit your manuscript through our online portal.</p>
+      <a onclick="nav('submit')" style="cursor:pointer" class="btn-accent btn-block">Submit Manuscript →</a>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Quick Navigation</div>
+      <ul class="scope-list">
+        <li><span class="sdot"></span><a href="#types">Article Types &amp; Limits</a></li>
+        <li><span class="sdot"></span><a href="#format">Manuscript Formatting</a></li>
+        <li><span class="sdot"></span><a href="#references">Reference Style (Vancouver)</a></li>
+        <li><span class="sdot"></span><a href="#tables">Tables &amp; Figures</a></li>
+        <li><span class="sdot"></span><a href="#checklist">Pre-Submission Checklist</a></li>
+        <li><span class="sdot"></span><a href="#review">Peer Review Process</a></li>
+        <li><span class="sdot"></span><a href="#ethics">Ethical Requirements</a></li>
+        <li><span class="sdot"></span><a href="#copyright">Copyright &amp; Licensing</a></li>
+        <li><span class="sdot"></span><a href="#tracking">Track Your Submission</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Important Dates</div>
+      <table class="dates-table">
+        <tr><td>Submissions Open</td><td><strong>June 1, 2026</strong></td></tr>
+        <tr><td>Vol 1 Deadline</td><td><strong>Sep 30, 2026</strong></td></tr>
+        <tr><td>Review Period</td><td><strong>4–6 weeks</strong></td></tr>
+        <tr><td>Publication</td><td><strong>Dec 2026</strong></td></tr>
+      </table>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Editorial Queries</div>
+      <div class="pub-contact">
+        <div>📧 <a href="mailto:editor@meridianjcam.com">editor@meridianjcam.com</a></div>
+        <div>📞 +91-94128-82757</div>
+        <div>📞 +91-80777-41454</div>
+      </div>
+    </div>
+  </aside>
+</div>
+</div>
+
+<div id="page-board" class="page">
+<div class="topbar-right"><a onclick="nav('login')" style="cursor:pointer">Login</a><a onclick="nav('register')" style="cursor:pointer">Register</a><a onclick="nav('authors')" style="cursor:pointer">For Authors</a><a onclick="nav('contact')" style="cursor:pointer">Contact</a></div>
+</div>
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a onclick="nav('home')" style="cursor:pointer">Home</a> / <span>Editorial Board</span></div>
+    <h1>Editorial Board</h1>
+    <p>Our distinguished editorial board comprises experienced clinicians, researchers, and academicians from across India's premier medical institutions — ensuring rigorous, fair, and expert peer review across all specialties.</p>
+  </div>
+</div>
+
+<div class="page-layout">
+  <main class="page-main">
+
+    <div class="infobox">Meridian JCAM is actively inviting eminent clinicians and researchers to join our editorial board. If you are interested in serving as an Associate Editor or Reviewer, please write to <a href="mailto:editor@meridianjcam.com">editor@meridianjcam.com</a></div>
+
+    <div class="board-section-title">Editor-in-Chief</div>
+    <div style="background:var(--navy-pale);border:1px solid var(--navy-light);border-radius:4px;padding:20px 24px;display:flex;gap:18px;align-items:flex-start;margin-bottom:20px">
+      <div style="width:64px;height:64px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#fff;flex-shrink:0">SR</div>
+      <div>
+        <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy)">Prof. (Dr.) S. Raj Kumar, MD, PhD</div>
+        <div style="font-size:12px;color:var(--gold);font-weight:600;letter-spacing:0.04em;margin:4px 0">Editor-in-Chief, Meridian JCAM</div>
+        <div style="font-size:12.5px;color:var(--ink-mid);line-height:1.7">Professor &amp; Head, Department of General Medicine<br>
+        Senior Consultant, Critical Care Medicine<br>
+        All India Institute of Medical Sciences (AIIMS) affiliate, Central India<br>
+        20+ years in clinical research &amp; academic medicine</div>
+        <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap">
+          <span class="badge-spec">Critical Care</span>
+          <span class="badge-spec">Internal Medicine</span>
+          <span class="badge-spec">Clinical Research</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="board-section-title">Managing Editor</div>
+    <div class="board-grid">
+      <div class="board-card">
+        <div class="board-avatar">NV</div>
+        <div>
+          <div class="board-name">Dr. Nitin Verma, MD</div>
+          <div class="board-role">Managing Editor &amp; Publisher</div>
+          <div class="board-inst">Sunrise Research Works, Bhopal<br>Academic Research Consultant, MP</div>
+          <span class="board-spec">Research Methodology · Biostatistics</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="board-section-title">Associate Editors</div>
+    <div class="board-grid">
+      <div class="board-card">
+        <div class="board-avatar">AK</div>
+        <div>
+          <div class="board-name">Dr. Anil Kumar Verma, MD</div>
+          <div class="board-role">Associate Editor — Respiratory Medicine</div>
+          <div class="board-inst">MMIMSR Mullana, Haryana<br>Dept. of Respiratory Medicine</div>
+          <span class="board-spec">COPD · Mechanical Ventilation</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="board-avatar">PG</div>
+        <div>
+          <div class="board-name">Dr. Priya Gupta, MS (Ophth.)</div>
+          <div class="board-role">Associate Editor — Ophthalmology</div>
+          <div class="board-inst">Sharda University, Greater Noida<br>Dept. of Ophthalmology</div>
+          <span class="board-spec">Anterior Segment · Glaucoma</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="board-avatar">SK</div>
+        <div>
+          <div class="board-name">Dr. Suresh Kumar, MS (Anatomy)</div>
+          <div class="board-role">Associate Editor — Anatomy</div>
+          <div class="board-inst">B.R.D. Medical College, Gorakhpur<br>Dept. of Anatomy</div>
+          <span class="board-spec">Morphometry · Clinical Anatomy</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="board-avatar">VM</div>
+        <div>
+          <div class="board-name">Dr. Vivek Mishra, MS (ENT)</div>
+          <div class="board-role">Associate Editor — ENT &amp; ORL</div>
+          <div class="board-inst">K.D. Medical College, Mathura<br>Dept. of ENT &amp; Head-Neck Surgery</div>
+          <span class="board-spec">Vocal Cord · Mastoid Surgery</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="board-avatar">PA</div>
+        <div>
+          <div class="board-name">Dr. Pooja Agarwal, MD (OBG)</div>
+          <div class="board-role">Associate Editor — Gynaecology</div>
+          <div class="board-inst">Sharda Hospital, Greater Noida<br>Dept. of Obstetrics &amp; Gynaecology</div>
+          <span class="board-spec">Reproductive Medicine · Case Reports</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="board-avatar">RS</div>
+        <div>
+          <div class="board-name">Dr. Rohit Singh, MD (Paediatrics)</div>
+          <div class="board-role">Associate Editor — Paediatrics</div>
+          <div class="board-inst">S.S.G. Hospital, Baroda (Vadodara)<br>Dept. of Paediatrics &amp; Neurology</div>
+          <span class="board-spec">Paediatric Neurology · Neuroimaging</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="board-section-title">Section Editors</div>
+    <div class="board-grid">
+      <div class="board-card">
+        <div class="board-avatar">MK</div>
+        <div>
+          <div class="board-name">Dr. Mohan Kumar, MD (Pathology)</div>
+          <div class="board-role">Section Editor — Pathology</div>
+          <div class="board-inst">GS Medical College, Hapur<br>Dept. of Pathology &amp; Microbiology</div>
+          <span class="board-spec">Histopathology · Ovarian Neoplasms</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="board-avatar">DT</div>
+        <div>
+          <div class="board-name">Dr. Deepa Tiwari, MD (Pharmacology)</div>
+          <div class="board-role">Section Editor — Pharmacology</div>
+          <div class="board-inst">SSIMS, Bhilai, Chhattisgarh<br>Dept. of Pharmacology</div>
+          <span class="board-spec">Clinical Pharmacology · Drug Trials</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="board-avatar">AS</div>
+        <div>
+          <div class="board-name">Dr. Amit Sharma, MD (Radiology)</div>
+          <div class="board-role">Section Editor — Radiology</div>
+          <div class="board-inst">Central India Medical College<br>Dept. of Radiodiagnosis</div>
+          <span class="board-spec">MRI · Neuroimaging · CT</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="board-avatar">GR</div>
+        <div>
+          <div class="board-name">Dr. G. Rao, MS (General Surgery)</div>
+          <div class="board-role">Section Editor — Surgery</div>
+          <div class="board-inst">K.D. Medical College, Mathura<br>Dept. of General Surgery</div>
+          <span class="board-spec">GI Surgery · Laparoscopic</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="board-section-title">Statistical Advisors</div>
+    <div class="board-grid">
+      <div class="board-card">
+        <div class="board-avatar">BP</div>
+        <div>
+          <div class="board-name">Prof. B. Pandey, PhD (Biostatistics)</div>
+          <div class="board-role">Statistical Advisor</div>
+          <div class="board-inst">Department of Community Medicine<br>Central India University</div>
+          <span class="board-spec">Meta-Analysis · SPSS · R</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="board-avatar">SJ</div>
+        <div>
+          <div class="board-name">Dr. Sneha Jain, MPH, PhD</div>
+          <div class="board-role">Statistical Advisor &amp; Epidemiologist</div>
+          <div class="board-inst">School of Public Health<br>Bhopal, Madhya Pradesh</div>
+          <span class="board-spec">Epidemiology · Systematic Reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="board-section-title">International Advisory Board</div>
+    <div class="board-grid">
+      <div class="board-card">
+        <div class="board-avatar">JL</div>
+        <div>
+          <div class="board-name">Prof. James Liu, MD, PhD</div>
+          <div class="board-role">International Advisor — Critical Care</div>
+          <div class="board-inst">Department of Intensive Care Medicine<br>National University Hospital, Singapore</div>
+          <span class="board-spec">Mechanical Ventilation · ARDS</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="board-avatar">MF</div>
+        <div>
+          <div class="board-name">Dr. Maria Fernandez, MD</div>
+          <div class="board-role">International Advisor — Respiratory</div>
+          <div class="board-inst">Dept. of Pulmonology<br>Hospital Universitario, Madrid, Spain</div>
+          <span class="board-spec">COPD · Pulmonary Rehabilitation</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="warnbox" style="margin-top:24px">
+      <strong>Join Our Editorial Board:</strong> We invite experienced clinicians and researchers (MD/MS/DNB/PhD) from all specialties to join our reviewer panel or editorial board. Reviewers receive acknowledgement certificates and are credited in our annual reviewer list. Send your CV to <a href="mailto:editor@meridianjcam.com">editor@meridianjcam.com</a>
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sb-title">Editorial Office</div>
+      <div class="pub-name">Meridian JCAM</div>
+      <div class="pub-addr">c/o Sunrise Research Works<br>Bhopal, Madhya Pradesh, India</div>
+      <div class="pub-contact">
+        <div>📧 <a href="mailto:editor@meridianjcam.com">editor@meridianjcam.com</a></div>
+        <div>📞 +91-94128-82757</div>
+        <div>📞 +91-80777-41454</div>
+      </div>
+    </div>
+    <div class="sidebar-card submit-dark">
+      <div class="sb-title" style="color:#fff;border-color:rgba(255,255,255,0.15)">Become a Reviewer</div>
+      <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7;margin-bottom:14px">We welcome experienced clinicians (MD/MS/DNB/PhD) across all specialties to join our reviewer panel.</p>
+      <a onclick="nav('contact')" style="cursor:pointer" class="btn-accent btn-block">Apply as Reviewer →</a>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Board Composition</div>
+      <div class="dates-table-wrap">
+        <table class="dates-table">
+          <tr><td>Editor-in-Chief</td><td><strong>1</strong></td></tr>
+          <tr><td>Managing Editor</td><td><strong>1</strong></td></tr>
+          <tr><td>Associate Editors</td><td><strong>6</strong></td></tr>
+          <tr><td>Section Editors</td><td><strong>4</strong></td></tr>
+          <tr><td>Statistical Advisors</td><td><strong>2</strong></td></tr>
+          <tr><td>International Advisors</td><td><strong>2</strong></td></tr>
+          <tr><td>Reviewers (Panel)</td><td><strong>40+</strong></td></tr>
+        </table>
+      </div>
+    </div>
+  </aside>
+</div>
+</div>
+
+<div id="page-about" class="page">
+<div class="topbar-right"><a onclick="nav('login')" style="cursor:pointer">Login</a><a onclick="nav('register')" style="cursor:pointer">Register</a><a onclick="nav('authors')" style="cursor:pointer">For Authors</a><a onclick="nav('contact')" style="cursor:pointer">Contact</a></div>
+</div>
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a onclick="nav('home')" style="cursor:pointer">Home</a> / <span>About the Journal</span></div>
+    <h1>About Meridian JCAM</h1>
+    <p>Learn about our mission, scope, ethics policies, and commitment to open-access medical publishing.</p>
+  </div>
+</div>
+
+<div class="page-layout">
+  <main class="page-main">
+
+    <div class="about-mission">
+      <h3>Our Mission</h3>
+      <p>Meridian Journal of Clinical and Applied Medicine (MJCAM) is committed to the rapid, ethical, and free dissemination of high-quality medical research. We serve as a convergence point — the meridian — where clinical evidence meets applied practice across every discipline of medicine. We believe that scientific knowledge should be freely accessible to all, which is why we charge no article processing fee and impose no subscription barriers.</p>
+    </div>
+
+    <h2 id="aims">Aims &amp; Scope</h2>
+    <p>Meridian JCAM is a peer-reviewed, open-access, multidisciplinary medical journal published quarterly by Sunrise Research Works, Bhopal, Madhya Pradesh, India. The journal publishes original research, systematic reviews, meta-analyses, case reports, narrative reviews, clinical images, editorials, letters to the editor, and short communications across all specialties of clinical and applied medicine.</p>
+    <p>The journal welcomes submissions from researchers, clinicians, and allied health professionals from India and across the world. We particularly encourage submissions from postgraduate medical residents, junior faculty, and clinician-scientists who are building their research careers.</p>
+
+    <h3>Subject Coverage</h3>
+    <p>The journal covers — but is not limited to — the following areas:</p>
+    <ul>
+      <li>Internal Medicine, Endocrinology, Rheumatology</li>
+      <li>Respiratory Medicine, Critical Care, and Pulmonology</li>
+      <li>Surgery (General, Orthopaedic, Cardiothoracic, Neurosurgery)</li>
+      <li>Obstetrics &amp; Gynaecology, Reproductive Medicine</li>
+      <li>Paediatrics &amp; Neonatology, Paediatric Neurology</li>
+      <li>Ophthalmology &amp; Visual Sciences</li>
+      <li>ENT, Head &amp; Neck Surgery, Audiology</li>
+      <li>Dermatology &amp; Venereology</li>
+      <li>Radiology, Imaging &amp; Interventional Procedures</li>
+      <li>Pathology, Histopathology, Cytology &amp; Haematology</li>
+      <li>Anatomy &amp; Morphometry (Clinical Anatomy)</li>
+      <li>Pharmacology &amp; Clinical Therapeutics</li>
+      <li>Psychiatry &amp; Mental Health</li>
+      <li>Community Medicine, Epidemiology &amp; Biostatistics</li>
+      <li>Dentistry &amp; Oral Medicine</li>
+      <li>Nursing &amp; Allied Health Sciences</li>
+    </ul>
+
+    <h2 id="indexing" style="margin-top:28px">Indexing &amp; Abstracting</h2>
+    <p>Meridian JCAM is actively pursuing indexing in major international databases. We are committed to achieving recognition within 2 years of launch through adherence to COPE guidelines, CrossRef DOI registration, and transparent publication practices.</p>
+    <table>
+      <thead><tr><th>Database</th><th>Status</th><th>Target Year</th></tr></thead>
+      <tbody>
+        <tr><td>CrossRef / DOI Assignment</td><td>✅ Active</td><td>2026</td></tr>
+        <tr><td>Google Scholar</td><td>✅ Active</td><td>2026</td></tr>
+        <tr><td>DOAJ (Directory of Open Access Journals)</td><td>🔄 Applied</td><td>2026</td></tr>
+        <tr><td>Index Copernicus International</td><td>🔄 Applied</td><td>2026–27</td></tr>
+        <tr><td>MedIND / NMC Recognized</td><td>🔄 In Progress</td><td>2026–27</td></tr>
+        <tr><td>Scopus (Elsevier)</td><td>⏳ Targeted</td><td>2027–28</td></tr>
+        <tr><td>PubMed / MEDLINE</td><td>⏳ Targeted</td><td>2028</td></tr>
+        <tr><td>Web of Science (Clarivate)</td><td>⏳ Targeted</td><td>2028</td></tr>
+        <tr><td>EMBASE</td><td>⏳ Targeted</td><td>2027–28</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="ethics">Publication Ethics &amp; COPE Compliance</h2>
+    <p>Meridian JCAM adheres strictly to the guidelines of the <strong>Committee on Publication Ethics (COPE)</strong>. All submissions are expected to meet the ethical standards described below. Violations will result in rejection or retraction.</p>
+
+    <div class="ethics-grid">
+      <div class="ethics-card">
+        <div class="ethics-title">Authorship</div>
+        <div class="ethics-desc">All listed authors must meet ICMJE criteria for authorship: substantial contribution to conception, design, data acquisition, analysis, and interpretation; drafting or critically revising the manuscript; approving the final version; and accountability for all aspects of the work.</div>
+      </div>
+      <div class="ethics-card">
+        <div class="ethics-title">Plagiarism</div>
+        <div class="ethics-desc">All manuscripts are screened for plagiarism using iThenticate / Turnitin. A similarity index of &gt;15% (excluding references) will require revision. Manuscripts with &gt;25% similarity may be rejected. Self-plagiarism is also not permitted.</div>
+      </div>
+      <div class="ethics-card">
+        <div class="ethics-title">Ethics Approval</div>
+        <div class="ethics-desc">Studies involving human participants must have Institutional Ethics Committee (IEC/IRB) approval. Clinical trials must be registered in a recognised trial registry (CTRI, ClinicalTrials.gov). Informed consent must be documented for case reports.</div>
+      </div>
+      <div class="ethics-card">
+        <div class="ethics-title">Conflict of Interest</div>
+        <div class="ethics-desc">All authors must disclose any financial or non-financial conflicts of interest. Funding sources, pharmaceutical company involvement, and any competing interests must be declared on the title page and in the manuscript.</div>
+      </div>
+      <div class="ethics-card">
+        <div class="ethics-title">Data Fabrication</div>
+        <div class="ethics-desc">Fabrication or falsification of data, including manipulation of images or statistical results, is a serious breach of ethics. The journal reserves the right to retract any published article where such misconduct is established post-publication.</div>
+      </div>
+      <div class="ethics-card">
+        <div class="ethics-title">Duplicate Submission</div>
+        <div class="ethics-desc">Simultaneous submission of the same manuscript to more than one journal is not permitted. Manuscripts previously published (in whole or in part) in any language must be disclosed. Preprint server deposits (e.g., medRxiv) must be declared at submission.</div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Open Access Policy</h2>
+    <p>Meridian JCAM is a fully open-access journal. All articles are freely available online immediately upon publication without any subscription or paywall. Authors retain copyright under a <strong>Creative Commons Attribution Non-Commercial 4.0 International (CC BY-NC 4.0)</strong> license, which allows free reading, sharing, and adaptation for non-commercial purposes with appropriate attribution.</p>
+    <div class="infobox">Meridian JCAM charges <strong>no Article Processing Charge (APC)</strong>. There is no submission fee, no review fee, and no publication fee. Publishing in Meridian JCAM is completely free for all authors.</div>
+
+    <h2>Peer Review Process</h2>
+    <p>Meridian JCAM follows a rigorous <strong>double-blind peer review</strong> process. Author identities are concealed from reviewers and reviewer identities from authors. Each manuscript is reviewed by a minimum of two independent experts in the relevant specialty. The editorial board reserves the right to reject manuscripts without external review if they do not meet the basic standards of the journal or fall outside the scope.</p>
+
+    <h3>Review Timeline</h3>
+    <ul>
+      <li><strong>Initial editorial screening:</strong> 5–7 working days</li>
+      <li><strong>External peer review:</strong> 4–6 weeks</li>
+      <li><strong>Revision turnaround expected from authors:</strong> 4 weeks</li>
+      <li><strong>Final editorial decision:</strong> 2–4 weeks after revision</li>
+      <li><strong>Production and online publication:</strong> 2–3 weeks after acceptance</li>
+    </ul>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sb-title">Quick Facts</div>
+      <div class="dates-table-wrap">
+        <table class="dates-table">
+          <tr><td>Full Name</td><td><strong>Meridian JCAM</strong></td></tr>
+          <tr><td>Launched</td><td><strong>2026</strong></td></tr>
+          <tr><td>Frequency</td><td><strong>Quarterly</strong></td></tr>
+          <tr><td>Publisher</td><td><strong>Sunrise Research Works</strong></td></tr>
+          <tr><td>Country</td><td><strong>India</strong></td></tr>
+          <tr><td>Language</td><td><strong>English</strong></td></tr>
+          <tr><td>Access</td><td><strong>Open Access</strong></td></tr>
+          <tr><td>APC</td><td><strong>None (Free)</strong></td></tr>
+          <tr><td>License</td><td><strong>CC BY-NC 4.0</strong></td></tr>
+          <tr><td>Peer Review</td><td><strong>Double-Blind</strong></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Article Types Accepted</div>
+      <ul class="scope-list">
+        <li><span class="sdot"></span>Original Research</li>
+        <li><span class="sdot"></span>Systematic Review &amp; Meta-Analysis</li>
+        <li><span class="sdot"></span>Narrative / Scoping Review</li>
+        <li><span class="sdot"></span>Case Report / Case Series</li>
+        <li><span class="sdot"></span>Clinical Image</li>
+        <li><span class="sdot"></span>Letter to the Editor</li>
+        <li><span class="sdot"></span>Editorial / Commentary</li>
+        <li><span class="sdot"></span>Short Communication</li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Publisher</div>
+      <div class="pub-name">Sunrise Research Works</div>
+      <div class="pub-addr">Bhopal, Madhya Pradesh, India</div>
+      <div class="pub-contact">
+        <div>📧 <a href="mailto:editor@meridianjcam.com">editor@meridianjcam.com</a></div>
+        <div>📞 +91-94128-82757</div>
+        <div>📞 +91-80777-41454</div>
+      </div>
+    </div>
+  </aside>
+</div>
+</div>
+
+<div id="page-submit" class="page">
+<div class="topbar-right"><a onclick="nav('login')" style="cursor:pointer">Login</a><a onclick="nav('register')" style="cursor:pointer">Register</a><a onclick="nav('authors')" style="cursor:pointer">For Authors</a><a onclick="nav('contact')" style="cursor:pointer">Contact</a></div>
+</div>
+
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a onclick="nav('home')" style="cursor:pointer">Home</a> / <span>Submit Manuscript</span></div>
+    <h1>Submit Your Manuscript</h1>
+    <p>Complete the form below to submit your manuscript to Meridian JCAM. All fields marked with <span style="color:#F0DFC4">*</span> are required. No article processing charge. Free to publish.</p>
+  </div>
+</div>
+
+<div class="page-layout">
+  <main class="page-main">
+
+    <div class="infobox"><strong>Before submitting:</strong> Please read the <a onclick="nav('authors')" style="cursor:pointer">Author Guidelines</a> carefully and complete the <a href="for-authors.html#checklist">Pre-Submission Checklist</a>. Ensure your manuscript is double-spaced in Times New Roman 12pt with continuous line numbers, and references follow Vancouver format.</div>
+
+    <form id="submitForm" onsubmit="handleSubmit(event)">
+
+      <div class="form-section">
+        <div class="form-section-title">1. Manuscript Details</div>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>Full Manuscript Title <span class="req">*</span></label>
+            <input type="text" placeholder="Enter the complete title of your manuscript" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Article Type <span class="req">*</span></label>
+            <select required>
+              <option value="">-- Select article type --</option>
+              <option>Original Research</option>
+              <option>Systematic Review &amp; Meta-Analysis</option>
+              <option>Narrative Review</option>
+              <option>Scoping Review</option>
+              <option>Case Report</option>
+              <option>Case Series</option>
+              <option>Clinical Image</option>
+              <option>Short Communication</option>
+              <option>Letter to the Editor</option>
+              <option>Editorial / Commentary</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Specialty / Subject Area <span class="req">*</span></label>
+            <select required>
+              <option value="">-- Select specialty --</option>
+              <option>Critical Care &amp; ICU Medicine</option>
+              <option>Respiratory Medicine &amp; Pulmonology</option>
+              <option>General Medicine &amp; Internal Medicine</option>
+              <option>Surgery (General)</option>
+              <option>Orthopaedic Surgery</option>
+              <option>Neurosurgery</option>
+              <option>Obstetrics &amp; Gynaecology</option>
+              <option>Paediatrics &amp; Neonatology</option>
+              <option>Ophthalmology</option>
+              <option>ENT &amp; Head-Neck Surgery</option>
+              <option>Dermatology</option>
+              <option>Radiology &amp; Imaging</option>
+              <option>Pathology &amp; Haematology</option>
+              <option>Anatomy &amp; Morphometry</option>
+              <option>Pharmacology</option>
+              <option>Psychiatry &amp; Mental Health</option>
+              <option>Community Medicine &amp; Epidemiology</option>
+              <option>Other / Allied Sciences</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>Abstract <span class="req">*</span></label>
+            <textarea rows="6" placeholder="Paste your abstract here (structured: Background, Methods, Results, Conclusions for original research)" required></textarea>
+          </div>
+        </div>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>Keywords (5–8 keywords, comma-separated, MeSH preferred) <span class="req">*</span></label>
+            <input type="text" placeholder="e.g., mechanical ventilation, weaning failure, albumin, ICU, nutritional assessment">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">2. Corresponding Author Details</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name <span class="req">*</span></label>
+            <input type="text" placeholder="Dr. / Prof. Full Name" required>
+          </div>
+          <div class="form-group">
+            <label>Designation / Degree <span class="req">*</span></label>
+            <input type="text" placeholder="e.g., MD, MS, DNB, PhD, Senior Resident">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Department <span class="req">*</span></label>
+            <input type="text" placeholder="e.g., Department of Medicine" required>
+          </div>
+          <div class="form-group">
+            <label>Institution / Hospital <span class="req">*</span></label>
+            <input type="text" placeholder="Full institution name and city" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address <span class="req">*</span></label>
+            <input type="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Mobile Number <span class="req">*</span></label>
+            <input type="tel" placeholder="+91-XXXXXXXXXX" required>
+          </div>
+        </div>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>ORCID iD (if available)</label>
+            <input type="text" placeholder="https://orcid.org/0000-0000-0000-0000">
+            <span class="form-note">Register free at orcid.org — helps identify you uniquely across publications</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">3. Co-Authors</div>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>All Authors (name, degree, affiliation — one per line)</label>
+            <textarea rows="5" placeholder="1. Dr. Name A, MD — Dept of X, Hospital Y, City&#10;2. Dr. Name B, MS — Dept of Z, Hospital W, City&#10;3. ..."></textarea>
+            <span class="form-note">List all authors in the order they should appear in the published article</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">4. Ethics &amp; Registration</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Ethics Committee / IEC Approval Number</label>
+            <input type="text" placeholder="e.g., IEC/2025/087">
+          </div>
+          <div class="form-group">
+            <label>Clinical Trial Registration (CTRI / ClinicalTrials.gov)</label>
+            <input type="text" placeholder="e.g., CTRI/2025/01/000000">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>PROSPERO Registration (for SR/MA)</label>
+            <input type="text" placeholder="e.g., CRD42025XXXXXX">
+          </div>
+          <div class="form-group">
+            <label>Funding Source</label>
+            <input type="text" placeholder="e.g., Self-funded / Indian Council of Medical Research (ICMR)">
+          </div>
+        </div>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>Conflict of Interest Statement <span class="req">*</span></label>
+            <textarea rows="2" placeholder="e.g., All authors declare no conflict of interest." required></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">5. File Upload</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Main Manuscript (Blinded — no author names) <span class="req">*</span></label>
+            <input type="file" accept=".doc,.docx" required>
+            <span class="form-note">Microsoft Word format (.doc / .docx). Remove all author identifying information.</span>
+          </div>
+          <div class="form-group">
+            <label>Title Page (with author details)</label>
+            <input type="file" accept=".doc,.docx">
+            <span class="form-note">Separate title page with all author details, affiliations, and declarations.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Cover Letter</label>
+            <input type="file" accept=".doc,.docx,.pdf">
+          </div>
+          <div class="form-group">
+            <label>Figures / Images (combined PDF or ZIP)</label>
+            <input type="file" accept=".pdf,.zip,.jpg,.jpeg,.tiff">
+            <span class="form-note">Min 300 DPI. JPEG/TIFF for photos; 600 DPI for line art.</span>
+          </div>
+        </div>
+        <div class="form-row full">
+          <div class="form-group">
+            <label>Supplementary Files (checklists: PRISMA/CONSORT/CARE etc.)</label>
+            <input type="file" accept=".pdf,.doc,.docx" multiple>
+            <span class="form-note">PRISMA 2020 checklist required for SR/MA. CONSORT required for RCTs. CARE for case reports.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title">6. Declarations</div>
+        <div class="checkbox-row"><input type="checkbox" required><span>I confirm that this manuscript has not been published previously and is not under consideration elsewhere.</span></div>
+        <div class="checkbox-row"><input type="checkbox" required><span>All listed authors meet the ICMJE criteria for authorship and have approved the final manuscript.</span></div>
+        <div class="checkbox-row"><input type="checkbox" required><span>Ethics approval has been obtained (or is not required for this study type) as declared above.</span></div>
+        <div class="checkbox-row"><input type="checkbox" required><span>I have read and agree to the Author Guidelines and Publication Ethics policy of Meridian JCAM.</span></div>
+        <div class="checkbox-row"><input type="checkbox" required><span>I understand that the article, if accepted, will be published under a CC BY-NC 4.0 open-access licence.</span></div>
+      </div>
+
+      <div class="form-row full">
+        <div class="form-group">
+          <label>Cover Letter / Additional Message to Editor</label>
+          <textarea rows="4" placeholder="Brief cover letter summarising the significance of your work and why it is suitable for Meridian JCAM..."></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-form-btn">Submit Manuscript →</button>
+    </form>
+
+    <div class="success-msg" id="successMsg">
+      <strong>✓ Manuscript Successfully Submitted!</strong>
+      Your submission has been received. You will receive an acknowledgement email within 24 hours. Manuscript ID will be assigned shortly. You can track your submission status by logging into your account.
+      <br><br>
+      For queries: <a href="mailto:editor@meridianjcam.com">editor@meridianjcam.com</a> &nbsp;|&nbsp; +91-94128-82757
+    </div>
+
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card submit-dark">
+      <div class="sb-title" style="color:#fff;border-color:rgba(255,255,255,0.15)">Why Publish Here?</div>
+      <ul class="step-list">
+        <li><span class="step-n">✓</span>No APC — completely free</li>
+        <li><span class="step-n">✓</span>Double-blind peer review</li>
+        <li><span class="step-n">✓</span>4–6 week review time</li>
+        <li><span class="step-n">✓</span>DOI assigned to all articles</li>
+        <li><span class="step-n">✓</span>Full-text open access</li>
+        <li><span class="step-n">✓</span>Targeting Scopus / PubMed</li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Checklist Reminders</div>
+      <ul class="scope-list">
+        <li><span class="sdot"></span>Double-spaced, TNR 12pt</li>
+        <li><span class="sdot"></span>Line numbers (continuous)</li>
+        <li><span class="sdot"></span>Vancouver references verified</li>
+        <li><span class="sdot"></span>Ethics approval stated</li>
+        <li><span class="sdot"></span>Plagiarism &lt;15%</li>
+        <li><span class="sdot"></span>Blinded main manuscript</li>
+        <li><span class="sdot"></span>PRISMA/CONSORT/CARE attached</li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Important Dates</div>
+      <table class="dates-table">
+        <tr><td>Vol 1 Issue 1 Deadline</td><td><strong>Sep 30, 2026</strong></td></tr>
+        <tr><td>Review Period</td><td><strong>4–6 weeks</strong></td></tr>
+        <tr><td>Publication</td><td><strong>Dec 2026</strong></td></tr>
+      </table>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">Need Help?</div>
+      <div class="pub-contact">
+        <div>📧 <a href="mailto:editor@meridianjcam.com">editor@meridianjcam.com</a></div>
+        <div>📞 +91-94128-82757</div>
+        <div>📞 +91-80777-41454</div>
+      </div>
+      <p style="font-size:11px;color:var(--ink-faint);margin-top:8px;line-height:1.6">Sunrise Research Works also provides thesis writing, statistical analysis, and manuscript preparation services for medical researchers.</p>
+    </div>
+  </aside>
+</div>
+</div>
+
+<div id="page-contact" class="page">
+<div class="topbar-right"><a onclick="nav('login')" style="cursor:pointer">Login</a><a onclick="nav('register')" style="cursor:pointer">Register</a><a onclick="nav('authors')" style="cursor:pointer">For Authors</a><a onclick="nav('contact')" style="cursor:pointer">Contact</a></div>
+</div>
+
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a onclick="nav('home')" style="cursor:pointer">Home</a> / <span>Contact</span></div>
+    <h1>Contact Us</h1>
+    <p>Reach out to the Meridian JCAM editorial office for queries regarding submissions, peer review, editorial board membership, or general information.</p>
+  </div>
+</div>
+<div class="page-layout">
+  <main class="page-main">
+    <h2>Editorial Office</h2>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <div class="contact-box-title">General Enquiries</div>
+        <div class="contact-item"><span class="contact-icon">📧</span><span>General: <a href="mailto:info@meridianjcam.com">info@meridianjcam.com</a></span></div>
+        <div class="contact-item"><span class="contact-icon">📧</span><span>Editorial: <a href="mailto:editor@meridianjcam.com">editor@meridianjcam.com</a></span></div>
+        <div class="contact-item"><span class="contact-icon">📧</span><span>Submissions: <a href="mailto:submit@meridianjcam.com">submit@meridianjcam.com</a></span></div>
+        <div class="contact-item"><span class="contact-icon">📞</span><span>+91-94128-82757</span></div>
+        <div class="contact-item"><span class="contact-icon">📞</span><span>+91-80777-41454</span></div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-box-title">Publisher Address</div>
+        <div class="contact-item"><span class="contact-icon">🏢</span><span><strong>Sunrise Research Works</strong><br>Bhopal, Madhya Pradesh<br>India — 462 001</span></div>
+        <div class="contact-item"><span class="contact-icon">🌐</span><span><a onclick="nav('home')" style="cursor:pointer">www.meridianjcam.com</a></span></div>
+        <div class="contact-item"><span class="contact-icon">⏰</span><span>Mon–Sat: 10:00 AM – 6:00 PM IST</span></div>
+      </div>
+    </div>
+
+    <div class="contact-grid" style="margin-top:0">
+      <div class="contact-box">
+        <div class="contact-box-title">For Manuscript Submission</div>
+        <div class="contact-item"><span class="contact-icon">📧</span><span><a href="mailto:submit@meridianjcam.com">submit@meridianjcam.com</a></span></div>
+        <div class="contact-item"><span class="contact-icon">📋</span><span>Use the <a onclick="nav('submit')" style="cursor:pointer">online submission portal</a></span></div>
+        <div class="contact-item"><span class="contact-icon">📖</span><span>Read <a onclick="nav('authors')" style="cursor:pointer">Author Guidelines</a> first</span></div>
+      </div>
+      <div class="contact-box">
+        <div class="contact-box-title">For Editorial Board / Reviewers</div>
+        <div class="contact-item"><span class="contact-icon">📧</span><span><a href="mailto:board@meridianjcam.com">board@meridianjcam.com</a></span></div>
+        <div class="contact-item"><span class="contact-icon">📄</span><span>Send CV with specialization</span></div>
+        <div class="contact-item"><span class="contact-icon">🏆</span><span>Reviewer certificates provided</span></div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Send Us a Message</h2>
+    <form id="contactForm" onsubmit="handleContact(event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name <span class="req">*</span></label>
+          <input type="text" placeholder="Dr. / Prof. Full Name" required>
+        </div>
+        <div class="form-group">
+          <label>Email Address <span class="req">*</span></label>
+          <input type="email" placeholder="your@email.com" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91-XXXXXXXXXX">
+        </div>
+        <div class="form-group">
+          <label>Subject <span class="req">*</span></label>
+          <select required>
+            <option value="">-- Select subject --</option>
+            <option>Manuscript Submission Query</option>
+            <option>Submission Status Enquiry</option>
+            <option>Editorial Board Membership</option>
+            <option>Reviewer Registration</option>
+            <option>Copyright / Permissions</option>
+            <option>Technical Support</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row full">
+        <div class="form-group">
+          <label>Your Message <span class="req">*</span></label>
+          <textarea rows="5" placeholder="Describe your query in detail..." required></textarea>
+        </div>
+      </div>
+      <button type="submit" class="submit-form-btn">Send Message →</button>
+      <div class="success-msg" id="contactSuccess">✓ Message sent successfully! We will reply within 1–2 working days.</div>
+    </form>
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card submit-dark">
+      <div class="sb-title" style="color:#fff;border-color:rgba(255,255,255,0.15)">Submit a Paper</div>
+      <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7;margin-bottom:14px">Ready to publish? No APC. Double-blind review. DOI assigned.</p>
+      <a onclick="nav('submit')" style="cursor:pointer" class="btn-accent btn-block">Submit Manuscript →</a>
+    </div>
+    <div class="sidebar-card">
+      <div class="sb-title">About Publisher</div>
+      <div class="pub-name">Sunrise Research Works</div>
+      <div class="pub-addr">Bhopal, Madhya Pradesh, India</div>
+      <p class="sb-text">Sunrise Research Works is a leading academic research assistance company providing thesis writing, statistical analysis, manuscript preparation, and publication support to medical and PhD researchers across India.</p>
+    </div>
+  </aside>
+</div>
+</div>
+
+<div id="page-login" class="page">
+  <div class="page-header"><div class="container">
+    <div class="breadcrumb"><a onclick="nav('home')" style="cursor:pointer">Home</a> / <span>Login</span></div>
+    <h1>Author Login</h1>
+    <p>Access your submission portal to track manuscript status and submit new papers.</p>
+  </div></div>
+  <div style="max-width:480px;margin:40px auto;padding:0 24px 60px">
+    <div class="page-main">
+      <h2>Sign In</h2>
+      <p>Login to track your submitted manuscript, respond to reviewer comments, or submit a new paper.</p>
+      <div class="form-group" style="margin-bottom:14px"><label>Email Address <span class="req">*</span></label><input type="email" placeholder="your@email.com"></div>
+      <div class="form-group" style="margin-bottom:20px"><label>Password <span class="req">*</span></label><input type="password" placeholder="Your password"></div>
+      <button class="submit-form-btn" style="width:100%;margin-bottom:12px" onclick="alert('Submission portal launching soon. For now, email submit@meridianjcam.com')">Login to Portal</button>
+      <p style="text-align:center;font-size:12px;color:var(--ink-faint)">Don't have an account? <span style="color:var(--navy);cursor:pointer;font-weight:600" onclick="nav('register')">Register here →</span></p>
+    </div>
+  </div>
+</div>
+
+<div id="page-register" class="page">
+  <div class="page-header"><div class="container">
+    <div class="breadcrumb"><a onclick="nav('home')" style="cursor:pointer">Home</a> / <span>Register</span></div>
+    <h1>Register</h1>
+    <p>Create your account to submit manuscripts or join our reviewer panel.</p>
+  </div></div>
+  <div style="max-width:600px;margin:40px auto;padding:0 24px 60px">
+    <div class="page-main">
+      <h2>Create Account</h2>
+      <form onsubmit="event.preventDefault();this.style.display='none';document.getElementById('regSuccess').style.display='block'">
+        <div class="form-row">
+          <div class="form-group"><label>Full Name <span class="req">*</span></label><input type="text" placeholder="Dr. / Prof. Full Name" required></div>
+          <div class="form-group"><label>Degree <span class="req">*</span></label><input type="text" placeholder="MD / MS / PhD" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Email <span class="req">*</span></label><input type="email" placeholder="your@email.com" required></div>
+          <div class="form-group"><label>Mobile <span class="req">*</span></label><input type="tel" placeholder="+91-XXXXXXXXXX" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Institution <span class="req">*</span></label><input type="text" placeholder="Hospital / University" required></div>
+          <div class="form-group"><label>Specialty <span class="req">*</span></label><input type="text" placeholder="e.g., Critical Care" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Password <span class="req">*</span></label><input type="password" placeholder="Create password" required></div>
+          <div class="form-group"><label>Confirm Password <span class="req">*</span></label><input type="password" placeholder="Repeat password" required></div>
+        </div>
+        <div class="form-group" style="margin-bottom:16px"><label>Register as</label><select><option>Author</option><option>Reviewer</option><option>Both Author &amp; Reviewer</option></select></div>
+        <button type="submit" class="submit-form-btn" style="width:100%">Create Account →</button>
+      </form>
+      <div id="regSuccess" class="success-msg"><strong>✓ Registration Successful!</strong><br>Your account has been created. You may now login to the submission portal. A confirmation email will be sent shortly.</div>
+    </div>
+  </div>
+</div>
+
+<!-- SHARED FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Meridian Journal of Clinical and Applied Medicine</div>
+        <p class="footer-desc">A peer-reviewed, open-access medical journal published quarterly by Sunrise Research Works, Bhopal, India. Dedicated to advancing evidence-based clinical practice across all medical specialties. No article processing charges. Free to read, free to publish.</p>
+        <div class="footer-issn">ISSN (Online): 0000-0000 &nbsp;|&nbsp; ISSN (Print): 0000-0000</div>
+      </div>
+      <div class="footer-col">
+        <h4>Journal</h4>
+        <a onclick="nav('issue')" style="cursor:pointer">Current Issue</a>
+        <a onclick="nav('archive')" style="cursor:pointer">Archive</a>
+        <a onclick="nav('specialties')" style="cursor:pointer">Browse Specialties</a>
+        <a onclick="nav('issue')" style="cursor:pointer">Most Read Articles</a>
+        <a onclick="nav('submit')" style="cursor:pointer">Submit Manuscript</a>
+      </div>
+      <div class="footer-col">
+        <h4>Authors</h4>
+        <a onclick="nav('submit')" style="cursor:pointer">Submit Manuscript</a>
+        <a onclick="nav('authors')" style="cursor:pointer">Author Guidelines</a>
+        <a onclick="nav('authors')" style="cursor:pointer">Peer Review Process</a>
+        <a onclick="nav('about')" style="cursor:pointer">Publication Ethics</a>
+        <a onclick="nav('about')" style="cursor:pointer">Copyright Policy</a>
+        <a onclick="nav('login')" style="cursor:pointer">Track Your Paper</a>
+      </div>
+      <div class="footer-col">
+        <h4>Journal Info</h4>
+        <a onclick="nav('about')" style="cursor:pointer">About the Journal</a>
+        <a onclick="nav('board')" style="cursor:pointer">Editorial Board</a>
+        <a onclick="nav('about')" style="cursor:pointer">Aims &amp; Scope</a>
+        <a onclick="nav('about')" style="cursor:pointer">Indexing</a>
+        <a onclick="nav('contact')" style="cursor:pointer">Contact Us</a>
+        <a href="mailto:editor@meridianjcam.com">editor@meridianjcam.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sunrise Research Works. All rights reserved. Meridian JCAM is licensed under CC BY-NC 4.0</span>
+      <span>Published by Sunrise Research Works, Bhopal, Madhya Pradesh, India</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const ALL_PAGES = ['home','issue','archive','specialties','authors','board','about','submit','contact','login','register'];
+
+function nav(page) {
+  ALL_PAGES.forEach(p => {
+    const el = document.getElementById('page-' + p);
+    if (el) el.classList.remove('active');
+    const nl = document.getElementById('nav-' + p);
+    if (nl) nl.classList.remove('active');
+  });
+  const target = document.getElementById('page-' + page);
+  if (target) target.classList.add('active');
+  const navEl = document.getElementById('nav-' + page);
+  if (navEl) navEl.classList.add('active');
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  // Update browser URL hash for sharing
+  history.pushState(null, '', '#' + page);
+}
+
+// Handle browser back/forward
+window.addEventListener('popstate', function() {
+  const hash = location.hash.replace('#','') || 'home';
+  nav(hash);
+});
+
+// Load from URL hash on page load
+window.addEventListener('DOMContentLoaded', function() {
+  const hash = location.hash.replace('#','') || 'home';
+  nav(hash);
+});
+
+// Submission form handler
+function handleSubmit(e) {
+  if (e) e.preventDefault();
+  const form = document.getElementById('submitForm');
+  if (form) form.style.display = 'none';
+  const msg = document.getElementById('successMsg');
+  if (msg) { msg.style.display = 'block'; msg.scrollIntoView({behavior:'smooth', block:'center'}); }
+}
+
+// Contact form handler  
+function handleContact(e) {
+  if (e) e.preventDefault();
+  const msg = document.getElementById('contactSuccess');
+  if (msg) msg.style.display = 'block';
+  if (e && e.target) {
+    const btn = e.target.querySelector('button[type=submit]');
+    if (btn) btn.style.display = 'none';
+  }
+}
+</script>
+</body>
+</html>
